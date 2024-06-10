@@ -1,5 +1,5 @@
-# WORKING_DIRECTORY <- ""   # Replace with your working dir
-# DATA_DIRECTORY <- ""      # **      **    **  data dir
+# WORKING_DIRECTORY <- ""   # Replace with your working dir # nolint
+# DATA_DIRECTORY <- ""      # **      **    **  data dir # nolint
 # Load working and data directory variables
 source("working_env.r")
 
