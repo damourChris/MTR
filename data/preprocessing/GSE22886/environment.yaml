@@ -1,0 +1,8 @@
+name: pre_GSE22886
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-base=4.1
+  - bioconductor-affy 
