@@ -1,8 +1,3 @@
-if (!requireNamespace("BiocManager", quietly = TRUE)) {
-  install.packages("BiocManager")
-}
-BiocManager::install("affy")
-
 # Function to read multiple CEL files and combine them into a matrix
 combine_cel_files <- function(cel_file_paths) {
   library(affy)
