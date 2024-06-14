@@ -1,4 +1,4 @@
-name: setup
+name: preprocessing
 channels:
   - conda-forge
   - bioconda
