@@ -17,7 +17,8 @@
 				"REditorSupport.r",
 				"julialang.language-julia",
 				"haberdashPI.R-in-julia",
-				"tamasfe.even-better-toml"
+				"tamasfe.even-better-toml",
+				"redhat.vscode-yaml"
 			]
 		}
 	},
