@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "julialang.language-julia",
+        "reditorsupport.r",
+        "tamasfe.even-better-toml"
+    ]
+}
