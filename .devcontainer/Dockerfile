@@ -17,14 +17,15 @@ RUN wget https://github.com/conda-forge/miniforge/releases/download/${MINIFORGE_
 ENV PATH="/opt/miniforge3/bin:${PATH}"
 #
 # Install conda packages
-COPY scripts/ /tmp/scripts/
 COPY envs/ /tmp/envs/
 
 ENV CONDA_ENVS_FILES /tmp/envs/
 
-# Create all the necessary environments
-RUN chmod +x /tmp/scripts/env_setup.sh 
-RUN /tmp/scripts/env_setup.sh
+# # Create all the necessary environments
+RUN conda env create -f /tmp/envs/julia.yml
+RUN conda env create -f /tmp/envs/R.yml
+# RUN conda env create -f /tmp/envs/preprocessing.yml
+
 
 # Create a symlink to julia and R
 RUN ln -s /opt/miniforge3/envs/julia/bin/julia /usr/bin/julia
