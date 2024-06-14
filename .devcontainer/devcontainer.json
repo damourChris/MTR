@@ -2,32 +2,29 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/alpine
 {
 	"name": "MTR",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"build": {
 		// Path is relative to the devcontainer.json file.
 		"dockerfile": "Dockerfile"
 	},
-	"features": {
-		"ghcr.io/rocker-org/devcontainer-features/r-apt:0": {
-			"useTesting": true,
-			"vscodeRSupport": "lsp"
-		},
-		"ghcr.io/rocker-org/devcontainer-features/miniforge:1": {
-			"version": "latest",
-			"variant": "Miniforge3"
-		},
-		"ghcr.io/julialang/devcontainer-features/julia:1": {
-			"channel": "release"
-		},
-	}
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"r.rterm.linux": "/opt/miniforge3/envs/R/bin/R",
+				"julia.executablePath": "/opt/miniforge3/envs/julia/bin/julia"
+			},
+			"extensions": [
+				"REditorSupport.r",
+				"julialang.language-julia",
+				"haberdashPI.R-in-julia",
+				"tamasfe.even-better-toml"
+			]
+		}
+	},
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "chmod +x /workspaces/MTR/.devcontainer/post_create.sh && /workspaces/MTR/.devcontainer/post_create.sh"
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
-	// Configure tool-specific properties.
-	// "customizations": {},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
