@@ -1,43 +1,12 @@
 source("/workspaces/MTR/data/setup/utils.R")
 
-getGEO <- GEOquery::getGEO # nolint: object_name_linter.
-
-gse65136 <- getGEO("GSE65136")
-gse65133 <- gse65136[["GSE65136-GPL10558_series_matrix.txt.gz"]]
-gse65134 <- gse65136[["GSE65136-GPL96_series_matrix.txt.gz"]]
-gse65135 <- gse65136[["GSE65136-GPL570_series_matrix.txt.gz"]]
-
-gse22886 <- getGEO("GSE22886")
-gse22886_gpl96 <- gse22886[["GSE22886-GPL96_series_matrix.txt.gz"]]
-gse22886_gpl97 <- gse22886[["GSE22886-GPL97_series_matrix.txt.gz"]]
-
-datasets <- list(
-  gse65133 = list(
-    dataset = gse65133,
-    genes_attribute = NULL,
-    gene_mapping_function = get_ensembl_mapping_illumina
-  ),
-  gse65134 = list(
-    dataset = gse65134,
-    genes_attribute = "affy_hg_u133a_2",
-    gene_mapping_function = get_ensembl_mapping_biomart
-  ),
-  gse65135 = list(
-    dataset = gse65135,
-    genes_attribute = "affy_hg_u133_plus_2",
-    gene_mapping_function = get_ensembl_mapping_biomart
-  ),
-  gse22886_gpl96 = list(
-    dataset = gse22886_gpl96,
-    genes_attribute = "affy_hg_u133a_2",
-    gene_mapping_function = get_ensembl_mapping_biomart
-  ),
-  gse22886_gpl97 = list(
-    dataset = gse22886_gpl97,
-    genes_attribute = "affy_hg_u133b",
-    gene_mapping_function = get_ensembl_mapping_biomart
-  )
-)
+# Check if the datasets are already downloaded
+if (!file.exists("data/preprocessing/datasets.RData")) {
+  # Load the datasets
+  source("/workspaces/MTR/data/preprocessing/datasets.R")
+} else {
+  readRDS("data/preprocessing/datasets.RData")
+}
 
 expr_data <- lapply(
   datasets,
@@ -47,3 +16,20 @@ expr_data <- lapply(
     )
   }
 )
+
+save_list_to_hdf5 <- function(list_data, file_path) {
+  # Create a new HDF5 file if it doesn't exist
+  hdf5::hdf5_create_file(file_path)
+
+  # Open the HDF5 file
+  h5file <- hdf5::H5File(file_path, "w")
+
+  # Iterate over the list items and save them to the HDF5 file
+  for (i in seq_along(list_data)) {
+    item_name <- paste0("item_", i)
+    hdf5::h5write(item_name, h5file, list_data[[i]])
+  }
+
+  # Close the HDF5 file
+  hdf5::h5close(h5file)
+}
