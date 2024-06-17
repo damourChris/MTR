@@ -2,3 +2,5 @@ Archive
 sandbox
 
 .env
+
+/src/data/*
