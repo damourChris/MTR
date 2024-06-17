@@ -1,19 +1,16 @@
-using Pkg
-Pkg.activate(@__DIR__)
+module Preprocessing
 
-using DotEnv
-DotEnv.load!()
+function __init__()
+    # Check if the required environment variables are set
+    required_envs_vars = ["CONDA_PREFIX", "R_DIR", "DATA_PATH"]
 
-required_envs = ["DATA_DIR", "R_SCRIPTS_PATH"]
-
-for env in required_envs
-    if !haskey(ENV, env)
-        throw(ErrorException("Environment variable $env is not set."))
+    for env in required_envs_vars
+        if !haskey(ENV, env)
+            throw(ErrorException("Environment variable $env is not set. Please read the README.md file for more information."))
+        end
     end
+
 end
 
-@enum VerbosityLevel LevelOff = 0 LevelInfo = 1 LevelDebug = 2
-verbosity_level = LevelInfo
 
-# Read the data directory and list all the dataset to preprocessing
-datasets = readdir(ENV["DATA_DIR"])
+end # module
