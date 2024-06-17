@@ -27,8 +27,8 @@ RUN conda env create -f /tmp/envs/R.yml
 RUN conda env create -f /tmp/envs/preprocessing.yml
 
 # Initialize all the custom environments variables
-ENV DATA_DIR /workspace/data
-ENV R_DIR /workspace/R
+ENV DATA_DIR /workspaces/MTR/src/data
+ENV R_DIR /workspaces/MTR/src/R
 
 # Create a symlink to julia and R
 RUN ln -s /opt/miniforge3/envs/julia/bin/julia /usr/bin/julia
