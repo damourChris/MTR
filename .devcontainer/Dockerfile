@@ -13,13 +13,13 @@ RUN wget https://github.com/conda-forge/miniforge/releases/download/${MINIFORGE_
    ./Miniforge3-Linux-x86_64.sh -b -p /opt/miniforge3 && \
     rm Miniforge3-Linux-x86_64.sh
 
-# Add conda to PATH
+# Add conda to PATH and set CONDA_PREFIX
 ENV PATH="/opt/miniforge3/bin:${PATH}"
-#
-# Install conda packages
-COPY envs/ /tmp/envs/
+ENV CONDA_PREFIX="/opt/miniforge3/"
 
+# Install conda packages
 ENV CONDA_ENVS_FILES /tmp/envs/
+COPY envs/ /tmp/envs/
 
 # # Create all the necessary environments
 RUN conda env create -f /tmp/envs/julia.yml
@@ -32,6 +32,7 @@ RUN ln -s /opt/miniforge3/envs/julia/bin/julia /usr/bin/julia
 RUN ln -s /opt/miniforge3/envs/R/bin/R /usr/bin/R
 
 # Clean up
+ENV CONDA_ENVS_FILES ""
 RUN apt-get autoremove -y && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/* && \
