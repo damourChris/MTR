@@ -12,7 +12,8 @@ raw_dataset_path <- file.path(data_path, "raw_datasets.RData")
 # Check if the datasets are already downloaded
 if (!file.exists(raw_dataset_path)) {
   # If not, download the datasets and save them
-  source(r_scripts_path)
+  dataset_loading_script_path <- file.path(r_dir, "datasets.R")
+  source(dataset_loading_script_path)
 } else {
   datasets <- readRDS(raw_dataset_path)
 }
