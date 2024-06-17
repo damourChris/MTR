@@ -1,6 +1,23 @@
+# Description: This script downloads the datasets from the GEO database and saves them to the RData file.
+
+# Set up
+data_path <- Sys.getenv("DATA_DIR")
+raw_series_files_dir <- file.path(data_path, "raw_series_files")
+
+# Check if the raw series files directory exists
+if (!dir.exists(raw_series_files_dir)) {
+  dir.create(raw_series_files_dir)
+}
+
 # Download the datasets
-gse65136 <- GEOquery::getGEO("GSE65136")
-gse22886 <- GEOquery::getGEO("GSE22886")
+gse65136 <- GEOquery::getGEO(
+  "GSE65136",
+  destdir = raw_series_files_dir
+)
+gse22886 <- GEOquery::getGEO(
+  "GSE22886",
+  destdir = raw_series_files_dir
+)
 
 # Extract the datasets from the GEO objects
 gse65136_gpl10558 <- gse65136[["GSE65136-GPL10558_series_matrix.txt.gz"]]
@@ -39,5 +56,5 @@ datasets <- list(
   )
 )
 
-data_path <- Sys.getenv("DATA_PATH")
+# Save the datasets
 saveRDS(datasets, file.path(data_path, "raw_datasets.RData"))
