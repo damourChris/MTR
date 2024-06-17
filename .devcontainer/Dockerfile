@@ -21,18 +21,20 @@ ENV CONDA_PREFIX="/opt/miniforge3/"
 ENV CONDA_ENVS_FILES /tmp/envs/
 COPY envs/ /tmp/envs/
 
-# # Create all the necessary environments
+# Create all the necessary environments
 RUN conda env create -f /tmp/envs/julia.yml
 RUN conda env create -f /tmp/envs/R.yml
 RUN conda env create -f /tmp/envs/preprocessing.yml
 
+# Initialize all the custom environments variables
+ENV DATA_DIR /workspace/data
+ENV R_DIR /workspace/R
 
 # Create a symlink to julia and R
 RUN ln -s /opt/miniforge3/envs/julia/bin/julia /usr/bin/julia
 RUN ln -s /opt/miniforge3/envs/R/bin/R /usr/bin/R
 
 # Clean up
-ENV CONDA_ENVS_FILES ""
 RUN apt-get autoremove -y && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/* && \
