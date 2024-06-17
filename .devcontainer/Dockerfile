@@ -24,7 +24,7 @@ ENV CONDA_ENVS_FILES /tmp/envs/
 # # Create all the necessary environments
 RUN conda env create -f /tmp/envs/julia.yml
 RUN conda env create -f /tmp/envs/R.yml
-# RUN conda env create -f /tmp/envs/preprocessing.yml
+RUN conda env create -f /tmp/envs/preprocessing.yml
 
 
 # Create a symlink to julia and R
