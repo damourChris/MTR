@@ -14,6 +14,11 @@ function fData(eset::ExpressionSet)::DataFrame
     return eset.featureData
 end
 
+function fData!(eset::ExpressionSet, df::DataFrame)::ExpressionSet
+    eset.featureData = df
+    return eset
+end
+
 function pData(eset::ExpressionSet)::DataFrame
     return eset.phenoData
 end
@@ -85,7 +90,7 @@ function rcopy(::Type{ExpressionSet}, s::Ptr{S4Sxp})
     return ExpressionSet(exprs, phenoData, featureData)
 end
 
-function save_eset(eset::ExpressionSet, path::AbstractString)
+function save_to_r_eset(eset::ExpressionSet, path::AbstractString)
 
     # Convert the Julia ExpressioSet to an R ExpressionSet
     R" eset <- Biobase::ExpressionSet(assayData = $(eset.exprs),
