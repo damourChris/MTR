@@ -1,92 +1,191 @@
-#' @title Annotates Expression Set with Ensembl Identifiers
+#' Load environment variable
 #'
-#' @method annotate_eset_ensembl
+#' This function loads the value of the specified environment variable.
 #'
-#' @description
-#' Retrieves the dataset and gene IDs from GEO, gets a unique list of gene IDs,
-#' and performs gene mapping using biomaRt.
-#' The function then annotates the Expression Set with Ensembl gene IDs.
-#'
-#' @param dataset The Expression Set to annotate.
-#' @param attribute  The biomaRt attribute for mapping gene IDs.
-#' @param col (optional) The col in Expression Set containing gene IDs.
-#' @param id_overide (optional) Whether to override the IDs with Ensembl IDs.
-#'
-#' @return A new Expression set with Ensembl gene IDs as a col.
-#'
+#' @param variable_name The name of the environment variable to load.
+#' @return The value of the environment variable.
+#' @details If the environment variable is not set, an error is thrown.
 #' @examples
-#' eset <- GEOquery::getGEO("GSE65135")
-#' annotate_eset_ensembl(
-#'   eset,
-#'   attribute = "affy_hg_u133_plus_2",
-#' )
-annotate_eset_ensembl <- function(
-    dataset,
-    col = "ID",
-    attribute = NULL,
-    id_overide = FALSE) {
-  if (missing(dataset)) {
-    stop("Dataset must be defined for gene mapping.")
+#' load_env_variable("API_KEY")
+#' # Returns the value of the "API_KEY" environment variable.
+#' @export load_env_variable
+load_env_variable <- function(variable_name) {
+  value <- Sys.getenv(variable_name)
+  if (value == "") {
+    stop(paste0("Environment variable ", variable_name, " is not set"))
   }
-  # Check that datset is a ExpressionSet
-  if (!is(dataset, "ExpressionSet")) {
-    stop("Dataset must be an ExpressionSet.")
-  }
-
-  if (is.null(attribute)) {
-    stop("Attribute must be defined for gene mapping.")
-  }
-
-
-  ids <- unique(unlist(dataset@featureData@data[col]))
-
-  # Clone the dataset
-  es <- dataset
-
-  # Get gene mapping
-  ids_map <- get_ensembl_mapping_biomart(ids, attribute)
-  new_row_names <- ids_map$Ensembl_ID
-
-  # Add the gene mapping to the dataset
-  if (id_overide) {
-    es@featureData@data$ID <- new_row_names
-  } else {
-    es@featureData@data$Ensembl_ID <- new_row_names
-  }
-
-  return(es)
+  return(value)
 }
 
-#' Retrieve Ensembl mapping using BioMart
+#' Extracts the first gene symbol from a given column
+#' in an ExpressionSet object.
 #'
-#' @method get_ensembl_mapping_biomart
+#' This function takes an ExpressionSet object (`eset`) and a column name
+#' (`gene_col`), and extracts the first gene symbol from each entry in
+#' the specified column. The gene symbols are separated by a specified
+#' separator (`separator`). The function returns a new ExpressionSet
+#' with the original column replaced with the  extracted  gene symbols.
 #'
-#' @description
-#' This function retrieves the Ensembl mapping
-#' for a given set of gene IDs using BioMart.
+#' @param eset An ExpressionSet object.
+#' @param gene_col The name of the column containing gene symbols.
+#' @param separator The separator used to separate multiple gene symbols
+#' in each entry. Default is '///'
 #'
-#' @param gene_ids A character vector of gene IDs.
-#' @param attribute The attribute to retrieve from BioMart.
-#' @return A data frame with gene IDs and corresponding Ensembl gene IDs.
+#' @return A new ExpressionSet object with the first gene symbol
+#' extracted from each entry.
+#'
 #' @examples
-#' get_ensembl_mapping_biomart(
-#'   c("1007_s_at", "1053_at", "117_at"), "affy_hg_u133a_2"
-#' )
+#' # Extract the first gene symbol from the "genes" column
+#' eset_modified <- extract_first_gene_symbol(eset, "Entrez_gene_id", "///")
 #'
-#' @importFrom biomaRt useMart getBM
-get_ensembl_mapping_biomart <- function(gene_ids, attribute) {
-  ensembl <- biomaRt::useMart("ensembl", dataset = "hsapiens_gene_ensembl")
+#' # Print the modified ExpressionSet object
+#' print(eset_modified)
+#'
+#' @importfrom Biobase fData
+extract_first_gene_symbol <- function(eset, gene_col, separator = "///") {
+  base_eset <- eset
 
-  gene_mapping <- biomaRt::getBM(
+  genes_to_map_raw <- fData(base_eset)[[gene_col]]
+
+  # If evertyhing is already a single gene, return the original eset
+  if (!any(grepl(separator, genes_to_map_raw))) {
+    return(base_eset)
+  }
+
+  single_genes <- sapply(
+    strsplit(genes_to_map_raw, separator), function(x) trimws(x[1])
+  )
+  fData(base_eset)[[gene_col]] <- single_genes
+  return(base_eset)
+}
+
+#' Removes genes with empty gene IDs from an ExpressionSet object in a given
+#' column.
+#'
+#' The function takes an ExpressionSet object (`eset`) and the name
+#' of the column containing the gene IDs (`gene_col`) and removes any genes
+#' with empty gene IDs.
+#'
+#' @param eset An ExpressionSet object.
+#' @param gene_col The name of the column in the featureData of the
+#' ExpressionSet object that contains the gene IDs.
+#'
+#' @return An ExpressionSet object with the empty genes removed.
+#'
+#' @examples
+#' eset <- remove_empty_genes(eset, "ENTREZ_GENE_ID")
+#'
+#' @export
+remove_empty_genes <- function(eset, gene_col) {
+  base_eset <- eset
+  gene_ids <- fData(base_eset)[[gene_col]]
+
+  # Replace the missing value with NA and remove them
+  gene_ids[gene_ids == ""] <- NA
+  no_gene_id <- which(is.na(gene_ids))
+
+  return(base_eset[-no_gene_id, ])
+}
+
+#' Aggregate expression data for genes with same gene IDs
+#'
+#' Aggregates the expression data for genes with the same gene IDs
+#' and returns a new ExpressionSet object with the aggregated data.
+#'
+#' @param eset An ExpressionSet object containing gene expression data.
+#' @param gene_col A character string specifying the column name in the fData
+#' of the ExpressionSet object that contains the Entrez IDs of the genes.
+#' @param aggregate_fun A function to aggregate the expression data for genes.
+#' Default is 'max'.
+#'
+#' @return A new ExpressionSet object with the aggregated expression data.
+#'
+#' @examples
+#' # Aggregate expression data by Entrez IDs
+#' new_eset <- aggregate_expression(eset, "EntrezID")
+#'
+#' @importFrom Biobase ExpressionSet
+#' @importFrom dplyr bind_cols group_by summarise
+#' @importFrom dplyr ungroup across where
+#' @importFrom rlang syms
+aggregate_expression <- function(eset, gene_col, aggregate_fun = max) {
+  base_eset <- eset
+
+  # Create a temporary data frame combining fData and exprs
+  tempDF <- bind_cols(fData(base_eset), as.data.frame(exprs(base_eset)))
+
+  # Aggregate expression data for genes with same Entrez IDs
+  aggregated_data_all <- tempDF %>%
+    group_by(!!!syms(gene_col)) %>%
+    summarise(across(where(is.numeric), aggregate_fun))
+
+  aggregated_data <- aggregated_data_all[, c(gene_col, sampleNames(base_eset))]
+
+  # Get the feature data for the remaining genes
+  gene_idxs <- match(aggregated_data[[gene_col]], fData(base_eset)[[gene_col]])
+  filtered_feature_data <- featureData(base_eset)[gene_idxs, ]
+
+  new_eset <- ExpressionSet(
+    assayData = as.matrix(aggregated_data[, -1]),
+    phenoData = phenoData(base_eset),
+    featureData = filtered_feature_data
+  )
+
+  return(new_eset)
+}
+
+
+map_to_ensembl <- function(eset, gene_col, attribute, mart = biomaRt::useMart("ensembl", dataset = "hsapiens_gene_ensembl")) {
+  base_eset <- eset
+  gene_ids <- fData(base_eset)[[gene_col]]
+
+  mapping <- biomaRt::getBM(
     attributes = c(attribute, "ensembl_gene_id"),
     values = gene_ids,
-    mart = ensembl
+    filters = attribute,
+    mart = mart
   )
 
-  res <- data.frame(
-    gene_id = gene_mapping[[attribute]],
-    ensembl_gene_id = gene_mapping$ensembl_gene_id
+  # Get index of genes with no mapping
+  no_mapping <- which(!gene_ids %in% mapping[[attribute]])
+
+  # Remove genes with no mapping
+  mapped_genes_eset <- base_eset[-no_mapping, ]
+
+  # Check if there are any genes left
+  if (nrow(mapped_genes_eset) == 0) {
+    print("No genes were mapped to Ensembl IDs")
+  }
+
+  unique_mapping <- mapping[!duplicated(mapping[[attribute]]), ]
+
+  fData(mapped_genes_eset)[["ensembl_id"]] <- sapply(
+    fData(mapped_genes_eset)[[gene_col]], function(x) {
+      mapping$ensembl_gene_id[which(unique_mapping[[attribute]] == x)]
+    }
   )
 
-  return(res)
+
+  # Duplicate expression if same gene map to different Ensembl ID
+  duplicated_genes <- mapping[duplicated(mapping[[attribute]]), attribute]
+  duplicated_genes_index <-
+    which(featureNames(mapped_genes_eset) %in% duplicated_genes)
+
+  if (length(duplicated_genes_index) == 0) {
+    return(mapped_genes_eset)
+  }
+
+  duplicated_genes_exprs <- exprs(mapped_genes_eset)[duplicated_genes_index, ]
+
+  # rename the rows with Ensembl ID
+  rownames(duplicated_genes_exprs) <-
+    mapping$ensembl_gene_id[duplicated_genes_index]
+
+  new_eset <- ExpressionSet(
+    assayData = rbind(exprs(mapped_genes_eset), duplicated_genes_exprs),
+    phenoData = pData(mapped_genes_eset),
+    featureData = fData(mapped_genes_eset)
+  )
+
+  return(new_eset)
 }
