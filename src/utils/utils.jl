@@ -20,4 +20,14 @@ export
 include(joinpath(@__DIR__, "strings.jl"))
 export is_loosely_the_same
 
+include(joinpath(@__DIR__, "graph.jl"))
+export is_term_in_graph,
+       inspect_term_nodes,
+       plot_graph_with_labels,
+       get_vertex_number_by_term_id,
+       get_vertex_number_by_gene,
+       get_vertex_number_by_prop,
+       set_term_props!,
+       set_gene_props!
+
 end
