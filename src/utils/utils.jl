@@ -17,4 +17,7 @@ export
        save_to_r_eset,
        load_eset
 
+include(joinpath(@__DIR__, "strings.jl"))
+export is_loosely_the_same
+
 end
