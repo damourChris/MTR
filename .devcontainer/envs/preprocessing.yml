@@ -4,6 +4,10 @@ channels:
   - bioconda
 dependencies:
   - r-base=4.3.3
-  - bioconductor-biomart=2.58.0
-  - bioconductor-illuminaHumanv4.db=1.26.0
-  - bioconductor-geoquery=2.70.0
+  - r-dplyr=1.1.4
+  - r-multcomp=1.4
+  - r-ggplot2=3.5
+  - r-reshape2=1.4
+  - r-pheatmap=1.0
+  - bioconductor-biomart=2.58
+  - bioconductor-geoquery=2.70
