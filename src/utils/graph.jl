@@ -6,7 +6,10 @@ using Plots
 using OntologyLookup: Term
 
 function is_term_in_graph(graph::MetaGraphs.MetaDiGraph, term::Term)
-    for vertex in vertices(graph)
+    vertice_with_id = [v_index
+                       for (v_index, v_props) in graph.vprops
+                       if haskey(v_props, :id)]
+    for vertex in vertice_with_id
         if get_prop(graph, vertex, :id) == term.obo_id
             return true
         end
@@ -53,12 +56,14 @@ function get_vertex_number_by_term_id(graph::MetaGraphs.MetaDiGraph, term_id::St
 end
 
 function get_vertex_number_by_gene(graph::MetaGraphs.MetaDiGraph, gene::String)
-    return get_vertex_number_by_prop(graph, :gene, gene)::Union{Int,Missing}
+    return get_vertex_number_by_prop(graph, :gene_id, gene)::Union{Int,Missing}
 end
 
 function get_vertex_number_by_prop(graph::MetaGraphs.MetaDiGraph, prop::Symbol,
                                    value)::Union{Int,Missing}
-    for vertex in vertices(graph)
+    vertice_with_prop = [v_index
+                         for (v_index, v_props) in graph.vprops if haskey(v_props, prop)]
+    for vertex in vertice_with_prop
         if get_prop(graph, vertex, prop) == value
             return vertex
         end
@@ -68,17 +73,21 @@ end
 
 function set_term_props!(graph::MetaGraphs.MetaDiGraph, term::Term, vertex_id::Int)::Bool
     return set_prop!(graph, vertex_id, :term, term) &
-           set_prop!(graph, vertex_id, :id, term.obo_id)
+           set_prop!(graph, vertex_id, :id, term.obo_id) &
+           set_prop!(graph, vertex_id, :label, term.label) &
+           set_prop!(graph, vertex_id, :type, :term)
 end
 
 function set_gene_props!(graph::MetaGraphs.MetaDiGraph, gene::String,
                          vertex_id::Int)::Bool
     return set_prop!(graph, vertex_id, :gene_id, gene) &
-           set_prop!(graph, vertex_id, :expression, missing)
+           set_prop!(graph, vertex_id, :expression, missing) &
+           set_prop!(graph, vertex_id, :type, :gene)
 end
 
 function set_gene_props!(graph::MetaGraphs.MetaDiGraph, gene::Tuple{String,Float64},
                          vertex_id::Int)::Bool
     return set_prop!(graph, vertex_id, :gene_id, gene[1]) &
-           set_prop!(graph, vertex_id, :expression, gene[2])
+           set_prop!(graph, vertex_id, :expression, gene[2]) &
+           set_prop!(graph, vertex_id, :type, :gene)
 end
