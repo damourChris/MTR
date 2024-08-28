@@ -33,6 +33,7 @@ ENV R_DIR /workspaces/MTR/src/R
 # Create a symlink to julia and R
 RUN ln -s /opt/miniforge3/envs/julia/bin/julia /usr/bin/julia
 RUN ln -s /opt/miniforge3/envs/R/bin/R /usr/bin/R
+RUN ln -s /opt/miniforge3/envs/R/bin/Rscript /usr/bin/Rscript
 
 # Clean up
 RUN apt-get autoremove -y && \
