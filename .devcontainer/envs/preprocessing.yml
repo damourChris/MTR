@@ -9,5 +9,6 @@ dependencies:
   - r-ggplot2=3.5
   - r-reshape2=1.4
   - r-pheatmap=1.0
+  - r-yaml=2.3
   - bioconductor-biomart=2.58
   - bioconductor-geoquery=2.70
