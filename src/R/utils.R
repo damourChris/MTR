@@ -189,3 +189,43 @@ map_to_ensembl <- function(eset, gene_col, attribute, mart = biomaRt::useMart("e
 
   return(new_eset)
 }
+
+# This is a helper function to read a list of files and combine them into a
+# single data structure.
+#
+# Expect description info to be a data frame with the following columns:
+# id, name, gene_col, genes_attribute and data_file_contents to be a list of
+# files.
+#
+#
+read_and_combine <- function(description_info, data_file_contents) {
+  ids <- description_info$id
+
+  combined_data <- lapply(ids, function(id) {
+    print(paste0("Processing dataset: ", id))
+    matching_file <- data_file_contents[grepl(id, data_file_contents)]
+
+    if (length(matching_file) == 0) {
+      warning(paste0("No file found for id: ", id))
+      return(NULL)
+    }
+
+    if (length(matching_file) > 1) {
+      warning(paste0("Multiple files found for id: ", id))
+      return(NULL)
+    }
+    eset <- readRDS(matching_file)
+    return(list(
+      eset = eset,
+      gene_col =
+        description_info$gene_col[description_info$id == id][1],
+      genes_attribute =
+        description_info$genes_attribute[description_info$id == id][1],
+      id = id
+    ))
+  })
+
+  names(combined_data) <- description_info$name
+
+  return(combined_data)
+}
