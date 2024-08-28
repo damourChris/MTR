@@ -30,4 +30,7 @@ export is_term_in_graph,
        set_term_props!,
        set_gene_props!
 
+include(joinpath(@__DIR__, "io.jl"))
+export save_eset, export_to_graphxml, save_to_r_eset
+
 end
