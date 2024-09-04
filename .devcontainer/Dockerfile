@@ -24,7 +24,6 @@ COPY envs/ /tmp/envs/
 # Create all the necessary environments
 RUN conda env create -f /tmp/envs/julia.yml
 RUN conda env create -f /tmp/envs/R.yml
-RUN conda env create -f /tmp/envs/preprocessing.yml
 
 # Initialize all the custom environments variables
 ENV DATA_DIR /workspaces/MTR/src/data

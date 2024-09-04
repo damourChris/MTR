@@ -1,5 +1,5 @@
 {
-    "r.rterm.linux": "/opt/miniforge3/envs/preprocessing/bin/R",
+    "r.rterm.linux": "/opt/miniforge3/envs/R/bin/R",
     "julia.executablePath": "/opt/miniforge3/envs/julia/bin/julia",
     "editor.formatOnSave": true,
 }
