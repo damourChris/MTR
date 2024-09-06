@@ -1,0 +1,67 @@
+2024/09/06 17:47:22 http2: server: error reading preface from client //./pipe/docker_engine: file has already been closed
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.27kB 0.0s done
+#1 DONE 0.1s
+
+#2 resolve image config for docker.io/docker/dockerfile:1
+#2 DONE 0.8s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:fe40cf4e92cd0c467be2cfc30657a680ae2398318afd50b0c80585784c604f28
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/condaforge/miniforge3:latest
+#4 DONE 0.0s
+
+#5 [internal] load metadata for docker.io/library/julia:1.10.4
+#5 DONE 0.5s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [builder 1/8] FROM docker.io/library/julia:1.10.4@sha256:48c57c62ee9c56d11e4e4aea03dbeca89af22817232c074debe9941e44d749d3
+#7 DONE 0.0s
+
+#8 [rbase 1/6] FROM docker.io/condaforge/miniforge3:latest
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 149B done
+#9 DONE 0.0s
+
+#10 [builder 2/8] WORKDIR /project
+#10 CACHED
+
+#11 [builder 3/8] RUN apt-get update &&     apt-get install -y     clang     libc6-dev     zlib1g-dev     && rm -rf /var/lib/apt/lists/*
+#11 CACHED
+
+#12 [rbase 5/6] RUN ln -s /opt/conda/envs/R/bin/Rscript /usr/bin/Rscript
+#12 CACHED
+
+#13 [rbase 3/6] RUN conda env create -f /tmp/envs/R.yml
+#13 CACHED
+
+#14 [builder 5/8] COPY --from=rbase /opt/conda/envs/R /opt/conda/envs/R
+#14 CACHED
+
+#15 [rbase 2/6] COPY envs/R.yml /tmp/envs/
+#15 CACHED
+
+#16 [builder 6/8] RUN ln -s /opt/conda/envs/R/bin/R /usr/bin/R
+#16 CACHED
+
+#17 [builder 4/8] COPY Project.toml Manifest.toml /project/
+#17 CACHED
+
+#18 [rbase 6/6] RUN apt-get autoremove -y &&     apt-get clean -y &&     rm -rf /var/lib/apt/lists/* &&     rm -rf /tmp/* &&     rm -rf /var/tmp/*
+#18 CACHED
+
+#19 [rbase 4/6] RUN ln -s /opt/conda/envs/R/bin/R /usr/bin/R
+#19 CACHED
+
+#20 [builder 7/8] RUN ln -s /tmp/julia-cache ~/.julia
+#20 CACHED
+
+#21 [builder 8/8] RUN --mount=type=cache,sharing=locked,target=/tmp/julia-cache     julia -e "using Pkg; Pkg.Registry.add("General");     Pkg.activate("."); Pkg.instantiate(); Pkg.precompile(strict=true);     using PackageCompiler; create_sysimage(;include_transitive_dependencies=false, sysimage_path="/project/sys.so")";
