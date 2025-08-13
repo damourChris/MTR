@@ -1,7 +1,7 @@
 using Graphs
-using GraphRecipes
 using MetaGraphs
 using OntologyLookup
+using STRINGdb
 using Plots
 
 struct OntologyTree
@@ -18,14 +18,18 @@ function OntologyTree(root::Term,
     return OntologyTree(graph, root, required_terms, max_parent_limit)
 end
 
-function populate!(onto_tree::OntologyTree)::Nothing
+function populate!(onto_tree::OntologyTree)
     required_terms = get_required_terms(onto_tree)
     base_term = get_base_term(onto_tree)
     graph = get_graph(onto_tree)
 
+    # Add the base term to the graph
+    add_vertex!(graph)
+    set_term_props!(graph, base_term, 1)
+
     for (index, term) in enumerate(required_terms)
         add_vertex!(graph)
-        set_term_props!(graph, term, index)
+        set_term_props!(graph, term, index + 1)
     end
 
     for (index, node) in enumerate(required_terms)
@@ -35,17 +39,28 @@ function populate!(onto_tree::OntologyTree)::Nothing
         cur_node = node # Start with the current node
         @info "Currently on node: $(cur_node.label)"
         while check_parent_limit > 0
-            @info "Current node is: $(cur_node.label)"
-            @info "Current parent limit is: $check_parent_limit"
+            # @info "Current node is: $(cur_node.label)"
+            # @info "Current parent limit is: $check_parent_limit"
             if cur_node == base_term
                 @info "Reached base node: $(base_term.label). Stopping."
                 break
             end
 
-            cur_node_parent = get_hierarchical_parent(cur_node; preferred_parent=base_term)
+            # We want to have a unified tree so the "preferred_parents" are all the terms
+            # already present in the graph
+            # Note that we might want to define an hierachy at some point to simplify this part
+            vertice_with_term = [v_index
+                                 for (v_index, v_props) in graph.vprops
+                                 if haskey(v_props, :term)]
+            preferred_parents = [get_prop(graph, vertex, :term)
+                                 for vertex in vertice_with_term]
+            # @info "Preferred parents are: $([preferred_parents[i].label for i in eachindex(preferred_parents)])"
+            cur_node_parent = get_hierarchical_parent(cur_node;
+                                                      preferred_parent=preferred_parents,
+                                                      include_UBERON=false)
             cur_node_index = get_vertex_number_by_term_id(graph, cur_node.obo_id)
 
-            if ismissing(cur_node)
+            if ismissing(cur_node) || ismissing(cur_node_parent)
                 @warn "Error fetching parents for node: $cur_node. Skipping."
                 break
             end
@@ -105,10 +120,25 @@ function connect_term_genes!(onto_tree::OntologyTree,
         for gene in genes
             term_gene_edge_added = connect_term_gene!(onto_tree.graph, term, gene)
             if !term_gene_edge_added
+                @info "Term Vertex num: $(get_vertex_number_by_term_id(graph, term.obo_id))"
+                @info "Cell Vertex num: $(get_vertex_number_by_gene(graph, gene))"
                 @warn "Error connecting gene: $gene to term: $(term.label). Skipping."
             end
         end
     end
+end
+
+function connect_genes!(graph::MetaGraphs.MetaDiGraph)
+    # Here we query the STRING db for the interactions between the genes
+    # and add the edges to the graph
+    genes_in_graph = [get_prop(graph, v, :gene_id)
+                      for (v, d) in graph.vprops
+                      if haskey(d, :gene_id)]
+
+    # Get the interactions between the genes
+    interactions = get_interactions(genes_in_graph[1:10])
+
+    return interactions
 end
 
 function connect_term_gene!(graph::MetaGraphs.MetaDiGraph, term::Term, gene::String)::Bool

@@ -1,0 +1,7 @@
+name = "MTRCli"
+uuid = "07de4fe9-654c-46b4-8e57-361a4c42983c"
+authors = ["Christopher Damour < 129872252+damourChris@users.noreply.github.com >"]
+version = "0.1.0"
+
+[deps]
+Comonicon = "863f3e99-da2a-4334-8734-de3dacbe5542"

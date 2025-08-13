@@ -45,6 +45,16 @@
             "request": "attach",
             "name": "Attach to R process",
             "splitOverwrittenOutput": true
+        },
+        {
+            "type": "julia",
+            "request": "launch",
+            "name": "Debug Julia File",
+            "stopOnEntry": true,
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "${file}"
+            ],
         }
     ]
 }

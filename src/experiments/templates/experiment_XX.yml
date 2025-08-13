@@ -1,0 +1,32 @@
+experiment_name: ""
+description: ""
+date_started: ""
+last_updated: ""
+raw_data_location: ""
+
+parameters:
+  - name: ""
+    value: ""
+    description: ""
+
+datasets:
+  - dataset_ID: ""
+    description: ""
+    file_location: ""
+    type: ""
+
+stages:
+  - stage_name: ""
+    description: ""
+  - stage_name: ""
+    description: ""
+
+results:
+  - result_name: ""
+    description: ""
+    file_location: ""
+
+notes:
+  - ""
+
+status: "Completed"

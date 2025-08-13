@@ -1,0 +1,19 @@
+session_name: "Session XXX"
+description: ""
+date_started: ""
+last_updated: ""
+
+experiments:
+  - experiment_name: ""
+    description: ""
+    file_location: ""
+
+overall_results:
+  - result_name: ""
+    description: ""
+    file_location: ""
+
+notes:
+  - ""
+
+status: "In Progress"

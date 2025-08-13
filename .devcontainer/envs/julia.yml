@@ -1,5 +1,0 @@
-name: julia
-channels:
-  - conda-forge
-dependencies:
-  - juliaup=1.14.9

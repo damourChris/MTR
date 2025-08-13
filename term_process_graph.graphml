@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="iri" for="node" attr.name="iri" attr.type="string"/>
+  <key id="ontology_name" for="node" attr.name="ontology_name" attr.type="string"/>
+  <key id="ontology_prefix" for="node" attr.name="ontology_prefix" attr.type="string"/>
+  <key id="short_form" for="node" attr.name="short_form" attr.type="string"/>
+  <key id="obo_id" for="node" attr.name="obo_id" attr.type="string"/>
+  <key id="description" for="node" attr.name="description" attr.type="string"/>
+  <key id="lang" for="node" attr.name="lang" attr.type="string"/>
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <key id="ontology_iri" for="node" attr.name="ontology_iri" attr.type="string"/>
+  <key id="synonyms" for="node" attr.name="synonyms" attr.type="string"/>
+  <key id="is_preferred_root" for="node" attr.name="is_preferred_root" attr.type="string"/>
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <node id="5">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0042098</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0042098</data>
+      <data key="obo_id">GO:0042098</data>
+      <data key="description">["The expansion of a T cell population by cell division. Follows T cell activation."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell proliferation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte proliferation", "T-cell proliferation", "T-lymphocyte proliferation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="56">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0031268</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0031268</data>
+      <data key="obo_id">GO:0031268</data>
+      <data key="description">["A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of a pseudopodium, a temporary protrusion or retractile process of a cell, associated with cellular movement."]</data>
+      <data key="lang">en</data>
+      <data key="label">pseudopodium organization</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["pseudopodium organisation", "pseudopodium organization and biogenesis"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="35">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0002150</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0002150</data>
+      <data key="obo_id">CL:0002150</data>
+      <data key="description">["Epithelioid macrophage is an activated macrophage that resembles an epithelial cell with finely granular, pale eosinophilic cytoplasm and central, ovoid nucleus (oval or elongate). This cell type is able to merge into one another to form aggregates. The presence of such aggregates may characterize some pathologic conditions, mainly granulomatous inflammation."]</data>
+      <data key="lang">en</data>
+      <data key="label">epithelioid macrophage</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["epithelioid cell", "epithelioid histocyte", "epitheloid macrophage"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="55">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000517</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000517</data>
+      <data key="obo_id">CL:0000517</data>
+      <data key="description">["A type of foam cell derived from a macrophage containing lipids in small vacuoles and typically seen in atherolosclerotic lesions, as well as other conditions."]</data>
+      <data key="lang">en</data>
+      <data key="label">macrophage derived foam cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["lipophage"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="30">
+      <data key="iri">http://purl.obolibrary.org/obo/UBERON_0002125</data>
+      <data key="ontology_name">uberon</data>
+      <data key="ontology_prefix">UBERON</data>
+      <data key="short_form">UBERON_0002125</data>
+      <data key="obo_id">UBERON:0002125</data>
+      <data key="description">["A lobule that is part of a thymus. Divided into an outer cortex and inner medulla and separated from each other by connective tissue septa, but with the medullary tissue continuous from lobule to lobule.[ncit,modified]."]</data>
+      <data key="lang">en</data>
+      <data key="label">thymus lobule</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/uberon.owl</data>
+      <data key="synonyms">["lobule of thymus", "thymic lobule", "thymus lobule"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="32">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000766</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000766</data>
+      <data key="obo_id">CL:0000766</data>
+      <data key="description">["A cell of the monocyte, granulocyte, or mast cell lineage."]</data>
+      <data key="lang">en</data>
+      <data key="label">myeloid leukocyte</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="6">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0002517</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0002517</data>
+      <data key="obo_id">GO:0002517</data>
+      <data key="description">["A process involving any mechanism for tolerance induction in T cells."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell tolerance induction</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte tolerance induction", "T-cell tolerance induction", "T-lymphocyte tolerance induction"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="45">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_1001603</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_1001603</data>
+      <data key="obo_id">CL:1001603</data>
+      <data key="description">["Circulating macrophages and tissue macrophages (alveolar macrophages) of lung."]</data>
+      <data key="lang">en</data>
+      <data key="label">lung macrophage</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["lung macrophages"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="4">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009046</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009046</data>
+      <data key="obo_id">CL:0009046</data>
+      <data key="description">["A T cell found in the lymph node medullary sinus.", "This is a general grouping term created for use in the EMBL-EBI Single Cell Expression Atlas anatomograms. Please use a more specific cell type term for annotation if possible, given the information available to you."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell of medullary sinus of lymph node</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="13">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0001768</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0001768</data>
+      <data key="obo_id">GO:0001768</data>
+      <data key="description">["The directed orientation of T cell signaling molecules and associated membrane rafts towards a chemokine gradient or a contact point with antigen presenting cell."]</data>
+      <data key="lang">en</data>
+      <data key="label">establishment of T cell polarity</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T cell polarization", "T lymphocyte polarization", "T-cell polarization", "establishment of T lymphocyte polarity", "establishment of T-cell polarity", "establishment of T-lymphocyte polarity"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="54">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0030225</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0030225</data>
+      <data key="obo_id">GO:0030225</data>
+      <data key="description">["The process in which a relatively unspecialized monocyte acquires the specialized features of a macrophage."]</data>
+      <data key="lang">en</data>
+      <data key="label">macrophage differentiation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["macrophage cell differentiation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="52">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000861</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000861</data>
+      <data key="obo_id">CL:0000861</data>
+      <data key="description">["A macrophage which develops from an inflammatory monocyte and is recruited into the tissues in response to injury and infection as part of an inflammatory response. Markers include CD11b-positive, CD68-positive, and F4/80-positive.", "Markers: CD11b+, CD68+; Mouse: F4/80+; role or process: immune, inflammation (inflammatory response)."]</data>
+      <data key="lang">en</data>
+      <data key="label">elicited macrophage</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["free macrophage", "wandering histiocyte"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="12">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0002456</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0002456</data>
+      <data key="obo_id">GO:0002456</data>
+      <data key="description">["Any process involved in the carrying out of an immune response by a T cell."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell mediated immunity</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["cell-mediated immunity", "cellular immune response", "T lymphocyte mediated immunity", "T-cell mediated immunity", "T-lymphocyte mediated immunity"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="28">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000827</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000827</data>
+      <data key="obo_id">CL:0000827</data>
+      <data key="description">["A lymphoid progenitor cell of the T cell lineage, with some lineage specific marker expression, but not yet fully committed to the T cell lineage."]</data>
+      <data key="lang">en</data>
+      <data key="label">pro-T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["pro-T lymphocyte", "progenitor T cell", "DN1 cell", "DN1 thymocyte", "TN1 cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="23">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_4033069</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_4033069</data>
+      <data key="obo_id">CL:4033069</data>
+      <data key="description">["A(n) T cell that is cycling."]</data>
+      <data key="lang">en</data>
+      <data key="label">cycling T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["proliferating T cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="41">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009038</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009038</data>
+      <data key="obo_id">CL:0009038</data>
+      <data key="description">["A macrophage that is located in the colon.", "This is a general grouping term created for use in the EMBL-EBI Single Cell Expression Atlas anatomograms. Please use a more specific cell type term for annotation if possible, given the information available to you."]</data>
+      <data key="lang">en</data>
+      <data key="label">colon macrophage</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["macrophage of colon"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="43">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000864</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000864</data>
+      <data key="obo_id">CL:0000864</data>
+      <data key="description">["A macrophage constitutively resident in a particular tissue under non-inflammatory conditions, and capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells."]</data>
+      <data key="lang">en</data>
+      <data key="label">tissue-resident macrophage</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["fixed macrophage", "resting histiocyte"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="11">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0002870</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0002870</data>
+      <data key="obo_id">GO:0002870</data>
+      <data key="description">["Any process contributing to anergy in T cells, a state of functional inactivation which is part of T cell tolerance induction."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell anergy</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte anergy", "T-cell anergy", "T-lymphocyte anergy"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="36">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_1905517</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_1905517</data>
+      <data key="obo_id">GO:1905517</data>
+      <data key="description">["The orderly movement of a macrophage from one site to another."]</data>
+      <data key="lang">en</data>
+      <data key="label">macrophage migration</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="39">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0010934</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0010934</data>
+      <data key="obo_id">GO:0010934</data>
+      <data key="description">["The appearance of a macrophage cytokine due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.", "Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select one of the 'regulation' children terms."]</data>
+      <data key="lang">en</data>
+      <data key="label">macrophage cytokine production</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="7">
+      <data key="iri">http://purl.obolibrary.org/obo/UBERON_0010393</data>
+      <data key="ontology_name">uberon</data>
+      <data key="ontology_prefix">UBERON</data>
+      <data key="short_form">UBERON_0010393</data>
+      <data key="obo_id">UBERON:0010393</data>
+      <data key="description">String[]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell domain</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/uberon.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="25">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0030217</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0030217</data>
+      <data key="obo_id">GO:0030217</data>
+      <data key="description">["The process in which a precursor cell type acquires characteristics of a more mature T-cell. A T cell is a type of lymphocyte whose definin characteristic is the expression of a T cell receptor complex.", "Note that the term 'thymocyte differentiation' was merged into this term because thymocytes are T cells, and thus the term was essentially redundant. Note that immunologists typically use the word 'development' to refer to cells of B or T cell lineages undergoing the process that GO describes as 'cell differentiation'."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell differentiation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte differentiation", "T-cell differentiation", "T-lymphocyte differentiation", "T cell development"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="34">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000576</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000576</data>
+      <data key="obo_id">CL:0000576</data>
+      <data key="description">["Myeloid mononuclear recirculating leukocyte that can act as a precursor of tissue macrophages, osteoclasts and some populations of tissue dendritic cells.", "Morphology: Mononuclear cell, diameter, 14 to 20 _M, N/C ratio 2:1-1:1. Nucleus may appear in variety of shapes: round, kidney, lobulated, or convoluted. Fine azurophilic granules present; markers: CD11b (shared with other myeloid cells), human: CD14, mouse: F4/80-mid,GR1-low; location: Blood, but can be recruited into tissues; role or process: immune &amp; tissue remodelling; lineage: hematopoietic, myeloid."]</data>
+      <data key="lang">en</data>
+      <data key="label">monocyte</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="50">
+      <data key="iri">http://purl.obolibrary.org/obo/UBERON_0005206</data>
+      <data key="ontology_name">uberon</data>
+      <data key="ontology_prefix">UBERON</data>
+      <data key="short_form">UBERON_0005206</data>
+      <data key="obo_id">UBERON:0005206</data>
+      <data key="description">["Stromal matrix surrounding blood vessels within the choroid plexus."]</data>
+      <data key="lang">en</data>
+      <data key="label">choroid plexus stroma</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/uberon.owl</data>
+      <data key="synonyms">["choroid plexus stromal matrix"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="2">
+      <data key="iri">http://purl.obolibrary.org/obo/UBERON_8410050</data>
+      <data key="ontology_name">uberon</data>
+      <data key="ontology_prefix">UBERON</data>
+      <data key="short_form">UBERON_8410050</data>
+      <data key="obo_id">UBERON:8410050</data>
+      <data key="description">["A subdivision of the digestive tract in humans that includes the rectum, the anal canal and the anus."]</data>
+      <data key="lang">en</data>
+      <data key="label">anorectum</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/uberon.owl</data>
+      <data key="synonyms">["anorectal canal"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="10">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0031295</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0031295</data>
+      <data key="obo_id">GO:0031295</data>
+      <data key="description">["The process of providing, via surface-bound receptor-ligand pairs, a second, antigen-independent, signal in addition to that provided by the T cell receptor to augment T cell activation."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell costimulation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T cell co-stimulation", "T lymphocyte costimulation", "T-cell co-stimulation", "T-cell costimulation", "T-lymphocyte costimulation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="18">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009064</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009064</data>
+      <data key="obo_id">CL:0009064</data>
+      <data key="description">["A T cell located in the lymph node paracortex, where macrophages and dendritic cells present antigenic peptides to these naïve T cells, stimulating them to become activated helper T cells or cytotoxic T lymphocytes."]</data>
+      <data key="lang">en</data>
+      <data key="label">lymph node paracortex T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["paracortex T cell", "paracortical T cell", "T cell of lymph node paracortex"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="26">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0002457</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0002457</data>
+      <data key="obo_id">GO:0002457</data>
+      <data key="description">["The process in which a T cell expresses antigen (peptide or lipid) on its cell surface in association with an MHC protein complex."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell antigen processing and presentation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte antigen processing and presentation", "T-cell antigen processing and presentation", "T-lymphocyte antigen processing and presentation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="27">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0070231</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0070231</data>
+      <data key="obo_id">GO:0070231</data>
+      <data key="description">["Any apoptotic process in a T cell, a type of lymphocyte whose defining characteristic is the expression of a T cell receptor complex."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell apoptotic process</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte apoptosis", "T-cell apoptosis", "T-lymphocyte apoptosis", "programmed cell death of T cells by apoptosis", "T cell apoptosis"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="42">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_4030058</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_4030058</data>
+      <data key="obo_id">CL:4030058</data>
+      <data key="description">["A macrophage that expresses the T cell receptor complex at the cell surface."]</data>
+      <data key="lang">en</data>
+      <data key="label">TCR-positive macrophage</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["T cell receptor positive macrophage", "TCR+ macrophage", "TCR.macs"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="16">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000798</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000798</data>
+      <data key="obo_id">CL:0000798</data>
+      <data key="description">["A T cell that expresses a gamma-delta T cell receptor complex.", "Note that gamma-delta T cells have both thymic and extrathymic differentiation pathways."]</data>
+      <data key="lang">en</data>
+      <data key="label">gamma-delta T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["gamma-delta T lymphocyte", "gamma-delta T-cell", "gamma-delta T-lymphocyte", "gammadelta T cell", "gd T cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="20">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0043029</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0043029</data>
+      <data key="obo_id">GO:0043029</data>
+      <data key="description">["The process of regulating the proliferation and elimination of T cells such that the total number of T cells within a whole or part of an organism is stable over time in the absence of an outside stimulus.", "Note that this term represents the return of T cell levels to stable numbers following an immune response as well as the proliferation and elimination of T cells required to maintain stable numbers in the absence of an outside stimulus."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell homeostasis</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte homeostasis", "T-cell homeostasis", "T-lymphocyte homeostasis"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="19">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0002420</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0002420</data>
+      <data key="obo_id">CL:0002420</data>
+      <data key="description">["A T cell that has not completed T cell selection."]</data>
+      <data key="lang">en</data>
+      <data key="label">immature T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["immature T-cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="49">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000145</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000145</data>
+      <data key="obo_id">CL:0000145</data>
+      <data key="description">["A cell capable of processing and presenting lipid and protein antigens to T cells in order to initiate an immune response.", "Note change of name; nearly all somatic cells can present antigens to T cells via MHC Class I complexes leading to effector responses, but professional antigen presenting cells constitutively express MHC Class II as well as costimulatory molecules, and thus can initiate immune responses via T cells."]</data>
+      <data key="lang">en</data>
+      <data key="label">professional antigen presenting cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["APC"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="44">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000113</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000113</data>
+      <data key="obo_id">CL:0000113</data>
+      <data key="description">["A vertebrate phagocyte with a single nucleus."]</data>
+      <data key="lang">en</data>
+      <data key="label">mononuclear phagocyte</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="9">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0002419</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0002419</data>
+      <data key="obo_id">CL:0002419</data>
+      <data key="description">["A T cell that expresses a T cell receptor complex and has completed T cell selection."]</data>
+      <data key="lang">en</data>
+      <data key="label">mature T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["CD3e-positive T cell", "mature T-cell", "CD3epsilon T cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="31">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0042116</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0042116</data>
+      <data key="obo_id">GO:0042116</data>
+      <data key="description">["A change in morphology and behavior of a macrophage resulting from exposure to a cytokine, chemokine, cellular ligand, or soluble factor."]</data>
+      <data key="lang">en</data>
+      <data key="label">macrophage activation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["macrophage polarization"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="29">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009047</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009047</data>
+      <data key="obo_id">CL:0009047</data>
+      <data key="description">["A macrophage found in the medullary sinus of the lymph node.", "This is a general grouping term created for use in the EMBL-EBI Single Cell Expression Atlas anatomograms. Please use a more specific cell type term for annotation if possible, given the information available to you."]</data>
+      <data key="lang">en</data>
+      <data key="label">macrophage of medullary sinus of lymph node</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["medullary sinus macrophage", "lymph node medullary sinus macrophage"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="46">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009036</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009036</data>
+      <data key="obo_id">CL:0009036</data>
+      <data key="description">["A macrophage located in the vermiform appendix.", "This is a general grouping term created for use in the EMBL-EBI Single Cell Expression Atlas anatomograms. Please use a more specific cell type term for annotation if possible, given the information available to you."]</data>
+      <data key="lang">en</data>
+      <data key="label">appendix macrophage</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["macrophage of appendix", "macrophage of appendix vermiformis", "macrophage of vermiform appendix"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="21">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0072678</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0072678</data>
+      <data key="obo_id">GO:0072678</data>
+      <data key="description">["The movement of a T cell within or between different tissues and organs of the body."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell migration</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte migration", "T-cell migration", "T-lymphocyte migration"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="38">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0061519</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0061519</data>
+      <data key="obo_id">GO:0061519</data>
+      <data key="description">["The process of regulating the proliferation and elimination of macrophage cells such that the total number of myeloid cells within a whole or part of an organism is stable over time in the absence of an outside stimulus."]</data>
+      <data key="lang">en</data>
+      <data key="label">macrophage homeostasis</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="24">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000789</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000789</data>
+      <data key="obo_id">CL:0000789</data>
+      <data key="description">["A T cell that expresses an alpha-beta T cell receptor complex."]</data>
+      <data key="lang">en</data>
+      <data key="label">alpha-beta T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["alpha-beta T lymphocyte", "alpha-beta T-cell", "alpha-beta T-lymphocyte"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="8">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0033371</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0033371</data>
+      <data key="obo_id">GO:0033371</data>
+      <data key="description">["A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of a secretory granule in a T cell. A secretory granule is a small subcellular vesicle, surrounded by a membrane, that is formed from the Golgi apparatus and contains a highly concentrated protein destined for secretion."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell secretory granule organization</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T cell secretory granule organisation", "T lymphocyte secretory granule organization", "T-cell secretory granule organization", "T-lymphocyte secretory granule organization", "T cell secretory granule organization and biogenesis", "T-lymphocyte secretory granule maturation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="17">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0045058</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0045058</data>
+      <data key="obo_id">GO:0045058</data>
+      <data key="description">["The process in which T cells that express T cell receptors that are restricted by self MHC protein complexes and tolerant to self antigens are selected for further maturation."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell selection</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte selection", "T-cell selection", "T-lymphocyte selection"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="37">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000235</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000235</data>
+      <data key="obo_id">CL:0000235</data>
+      <data key="description">["A mononuclear phagocyte present in variety of tissues, typically differentiated from monocytes, capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.", "Morphology: Diameter 30_M-80 _M, abundant cytoplasm, low N/C ratio, eccentric nucleus. Irregular shape with pseudopods, highly adhesive. Contain vacuoles and phagosomes, may contain azurophilic granules; markers: Mouse &amp; Human: CD68, in most cases CD11b. Mouse: in most cases F4/80+; role or process: immune, antigen presentation, &amp; tissue remodelling; lineage: hematopoietic, myeloid."]</data>
+      <data key="lang">en</data>
+      <data key="label">macrophage</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["histiocyte"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="1">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000084</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000084</data>
+      <data key="obo_id">CL:0000084</data>
+      <data key="description">["A type of lymphocyte whose defining characteristic is the expression of a T cell receptor complex."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["T lymphocyte", "T-cell", "T-lymphocyte", "immature T cell", "mature T cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="53">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0071888</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0071888</data>
+      <data key="obo_id">GO:0071888</data>
+      <data key="description">["Any apoptotic process in a macrophage, a mononuclear phagocyte present in a variety of tissues.", "Note that a lymphocyte is a cell of the B cell, T cell, or natural killer cell lineage (CL:0000542)."]</data>
+      <data key="lang">en</data>
+      <data key="label">macrophage apoptotic process</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["macrophage apoptosis", "AICD", "activation-induced cell death"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="22">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0042110</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0042110</data>
+      <data key="obo_id">GO:0042110</data>
+      <data key="description">["The change in morphology and behavior of a mature or immature T cell resulting from exposure to a mitogen, cytokine, chemokine, cellular ligand, or an antigen for which it is specific."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell activation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte activation", "T-cell activation", "T-lymphocyte activation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="47">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000647</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000647</data>
+      <data key="obo_id">CL:0000647</data>
+      <data key="description">["A phagocytic cell formed by the fusion of macrophages, occurs in chronic inflammatory responses to persistent microorganism such as M.tuberculosis, component of granulomas. Sometimes used to refer to megakaryocytes.", "Role or process: Chronic infection, granulomatous inflammation. Consider also megakaryocyte (CL:0000556) as sometimes multinucleated giant cell is used to refer to this."]</data>
+      <data key="lang">en</data>
+      <data key="label">multinucleated giant cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["Langerhans giant cell", "foreign body giant cell", "macrophage polykaryon", "multinucleate giant cell", "syncytial giant cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="14">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009031</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009031</data>
+      <data key="obo_id">CL:0009031</data>
+      <data key="description">["A T cell that is located in a vermiform appendix.", "This is a general grouping term created for use in the EMBL-EBI Single Cell Expression Atlas anatomograms. Please use a more specific cell type term for annotation if possible, given the information available to you."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell of appendix</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["T cell of appendix vermiformis", "T cell of vermiform appendix", "appendix T cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="3">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009051</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009051</data>
+      <data key="obo_id">CL:0009051</data>
+      <data key="description">["A T cell that is located in the anorectum.", "This is a general grouping term created for use in the EMBL-EBI Single Cell Expression Atlas anatomograms. Please use a more specific cell type term for annotation if possible, given the information available to you."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell of anorectum</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="51">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_4033076</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_4033076</data>
+      <data key="obo_id">CL:4033076</data>
+      <data key="description">["A(n) macrophage that is cycling."]</data>
+      <data key="lang">en</data>
+      <data key="label">cycling macrophage</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["proliferating macrophage"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="33">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0002472</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0002472</data>
+      <data key="obo_id">GO:0002472</data>
+      <data key="description">["The process in which a macrophage expresses antigen (peptide or lipid) on its cell surface in association with an MHC protein complex."]</data>
+      <data key="lang">en</data>
+      <data key="label">macrophage antigen processing and presentation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="40">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0010931</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0010931</data>
+      <data key="obo_id">GO:0010931</data>
+      <data key="description">["A process involving any mechanism for tolerance induction in macrophages."]</data>
+      <data key="lang">en</data>
+      <data key="label">macrophage tolerance induction</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="48">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009048</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009048</data>
+      <data key="obo_id">CL:0009048</data>
+      <data key="description">["A macrophage that is located in the anorectum.", "This is a general grouping term created for use in the EMBL-EBI Single Cell Expression Atlas anatomograms. Please use a more specific cell type term for annotation if possible, given the information available to you."]</data>
+      <data key="lang">en</data>
+      <data key="label">anorectum macrophage</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["macrophage of anorectum"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="15">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000542</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000542</data>
+      <data key="obo_id">CL:0000542</data>
+      <data key="description">["A lymphocyte is a leukocyte commonly found in the blood and lymph that has the characteristics of a large nucleus, a neutral staining cytoplasm, and prominent heterochromatin.", "Editors note: consider adding taxon constraint to vertebrata (PMID:18025161)"]</data>
+      <data key="lang">en</data>
+      <data key="label">lymphocyte</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <edge source="1" target="12"/>
+    <edge source="1" target="15"/>
+    <edge source="1" target="28"/>
+    <edge source="3" target="1"/>
+    <edge source="3" target="2"/>
+    <edge source="4" target="1"/>
+    <edge source="5" target="1"/>
+    <edge source="6" target="1"/>
+    <edge source="7" target="1"/>
+    <edge source="8" target="1"/>
+    <edge source="9" target="1"/>
+    <edge source="10" target="1"/>
+    <edge source="11" target="1"/>
+    <edge source="12" target="1"/>
+    <edge source="13" target="1"/>
+    <edge source="14" target="1"/>
+    <edge source="16" target="1"/>
+    <edge source="17" target="1"/>
+    <edge source="18" target="1"/>
+    <edge source="19" target="1"/>
+    <edge source="20" target="1"/>
+    <edge source="21" target="1"/>
+    <edge source="22" target="1"/>
+    <edge source="23" target="1"/>
+    <edge source="24" target="1"/>
+    <edge source="25" target="1"/>
+    <edge source="26" target="1"/>
+    <edge source="27" target="1"/>
+    <edge source="29" target="37"/>
+    <edge source="30" target="37"/>
+    <edge source="31" target="37"/>
+    <edge source="33" target="37"/>
+    <edge source="35" target="37"/>
+    <edge source="36" target="37"/>
+    <edge source="37" target="32"/>
+    <edge source="37" target="34"/>
+    <edge source="37" target="44"/>
+    <edge source="37" target="49"/>
+    <edge source="37" target="56"/>
+    <edge source="38" target="37"/>
+    <edge source="39" target="37"/>
+    <edge source="40" target="37"/>
+    <edge source="41" target="37"/>
+    <edge source="42" target="37"/>
+    <edge source="43" target="37"/>
+    <edge source="45" target="37"/>
+    <edge source="46" target="37"/>
+    <edge source="47" target="37"/>
+    <edge source="48" target="37"/>
+    <edge source="50" target="37"/>
+    <edge source="51" target="37"/>
+    <edge source="52" target="37"/>
+    <edge source="53" target="37"/>
+    <edge source="54" target="37"/>
+    <edge source="55" target="37"/>
+  </graph>
+</graphml>

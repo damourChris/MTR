@@ -1,0 +1,9 @@
+channels = ["conda-forge", "bioconda"]
+
+[deps]
+bioconductor-biomart = "==2.58"
+r-dplyr = "==1.1.4"
+r-ggplot2 = "==3.5"
+r-base = "==4.3.3"
+r = ""
+bioconductor-geoquery = "==2.70"

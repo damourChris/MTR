@@ -135,15 +135,27 @@ aggregate_expression <- function(eset, gene_col, aggregate_fun = max) {
 }
 
 
-map_to_ensembl <- function(eset, gene_col, attribute, mart = biomaRt::useMart("ensembl", dataset = "hsapiens_gene_ensembl")) {
+map_to_ensembl <- function(eset, gene_col, attribute, mart, handle = NULL) {
   base_eset <- eset
   gene_ids <- fData(base_eset)[[gene_col]]
+
+  if (is.null(handle)) {
+    library(curl)
+
+    # Create a new CURLHandle
+    handle <- new_handle()
+
+    # Set options on the handle
+    handle_setopt(handle, ssl_verifypeer = FALSE)
+    handle_setopt(handle, timeout_ms = 5000)
+  }
 
   mapping <- biomaRt::getBM(
     attributes = c(attribute, "ensembl_gene_id"),
     values = gene_ids,
     filters = attribute,
-    mart = mart
+    mart = mart,
+    handle = handle
   )
 
   # Get index of genes with no mapping

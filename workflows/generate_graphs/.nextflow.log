@@ -1,0 +1,127 @@
+Sep-18 09:21:50.593 [main] DEBUG nextflow.cli.Launcher - $> nextflow generate_graphs.nf
+Sep-18 09:21:50.850 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Sep-18 09:21:50.907 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/vscode/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Sep-18 09:21:50.951 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-18 09:21:50.953 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-18 09:21:50.958 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-18 09:21:50.983 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-18 09:21:51.065 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-18 09:21:51.128 [main] DEBUG nextflow.cli.CmdRun - Launching `generate_graphs.nf` [tender_kay] DSL2 - revision: a94439aba1
+Sep-18 09:21:51.130 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-18 09:21:51.130 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-18 09:21:51.250 [main] DEBUG nextflow.Session - Session UUID: 4b616c7b-0cff-4276-bc0e-d2f81adb33a6
+Sep-18 09:21:51.259 [main] DEBUG nextflow.Session - Run name: tender_kay
+Sep-18 09:21:51.260 [main] DEBUG nextflow.Session - Executor pool size: 12
+Sep-18 09:21:51.284 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-18 09:21:51.294 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-18 09:21:51.377 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC 
+  System: Linux 5.15.153.1-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.24+8-post-Debian-2deb11u1
+  Encoding: UTF-8 (UTF-8)
+  Process: 1173@209cc883ebee [172.17.0.2]
+  CPUs: 12 - Mem: 7.6 GB (1.9 GB) - Swap: 2 GB (2 GB)
+Sep-18 09:21:51.412 [main] DEBUG nextflow.Session - Work-dir: /workspaces/MTR/workflows/generate_graphs/work [ext2/ext3]
+Sep-18 09:21:51.413 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/MTR/workflows/generate_graphs/bin
+Sep-18 09:21:51.439 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-18 09:21:51.454 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-18 09:21:51.501 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-18 09:21:51.527 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Sep-18 09:21:51.695 [main] DEBUG nextflow.Session - Session start
+Sep-18 09:21:52.554 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-18 09:21:52.569 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/vscode/.nextflow/secrets/store.json
+Sep-18 09:21:52.582 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3a17b2e3] - activable => nextflow.secret.LocalSecretsProvider@3a17b2e3
+Sep-18 09:21:52.726 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-18 09:21:52.726 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-18 09:21:52.734 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-18 09:21:52.745 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=7.6 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Sep-18 09:21:52.750 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-18 09:21:52.878 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: map_to_ids
+Sep-18 09:21:52.878 [main] DEBUG nextflow.Session - Igniting dataflow network (10)
+Sep-18 09:21:52.898 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > map_to_ids
+Sep-18 09:21:52.901 [PathVisitor-5] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/input/test_esets/; pattern: *; options: [:]
+Sep-18 09:21:52.901 [PathVisitor-9] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/configs/; pattern: *; options: [:]
+Sep-18 09:21:52.901 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/input/raw_esets/; pattern: *; options: [:]
+Sep-18 09:21:52.901 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/input/reference_esets/; pattern: *; options: [:]
+Sep-18 09:21:52.901 [PathVisitor-6] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/input/het_gnn/; pattern: *; options: [:]
+Sep-18 09:21:52.901 [PathVisitor-4] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/input/train_data/; pattern: *; options: [:]
+Sep-18 09:21:52.901 [PathVisitor-8] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/reports/; pattern: *; options: [:]
+Sep-18 09:21:52.901 [PathVisitor-3] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/graphs/; pattern: *; options: [:]
+Sep-18 09:21:52.901 [PathVisitor-7] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/results/; pattern: *; options: [:]
+Sep-18 09:21:52.908 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_32239566401820ca: /workspaces/MTR/workflows/generate_graphs/generate_graphs.nf
+Sep-18 09:21:52.910 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-18 09:21:52.913 [main] DEBUG nextflow.Session - Session await
+Sep-18 09:21:52.942 [PathVisitor-6] DEBUG nextflow.file.PathVisitor - No such file or directory: data/input/het_gnn/ -- Skipping visit
+Sep-18 09:21:52.942 [PathVisitor-8] DEBUG nextflow.file.PathVisitor - No such file or directory: data/reports/ -- Skipping visit
+Sep-18 09:21:52.943 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - No such file or directory: data/input/reference_esets/ -- Skipping visit
+Sep-18 09:21:52.943 [PathVisitor-4] DEBUG nextflow.file.PathVisitor - No such file or directory: data/input/train_data/ -- Skipping visit
+Sep-18 09:21:52.943 [PathVisitor-7] DEBUG nextflow.file.PathVisitor - No such file or directory: data/results/ -- Skipping visit
+Sep-18 09:21:52.943 [PathVisitor-5] DEBUG nextflow.file.PathVisitor - No such file or directory: data/input/test_esets/ -- Skipping visit
+Sep-18 09:21:52.944 [PathVisitor-3] DEBUG nextflow.file.PathVisitor - No such file or directory: data/graphs/ -- Skipping visit
+Sep-18 09:21:53.220 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 09:21:53.224 [Task submitter] INFO  nextflow.Session - [61/ca90b1] Submitted process > map_to_ids (4)
+Sep-18 09:21:53.234 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 09:21:53.235 [Task submitter] INFO  nextflow.Session - [8b/739200] Submitted process > map_to_ids (1)
+Sep-18 09:21:53.240 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 09:21:53.243 [Task submitter] INFO  nextflow.Session - [ef/e50d6f] Submitted process > map_to_ids (5)
+Sep-18 09:21:53.251 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 09:21:53.252 [Task submitter] INFO  nextflow.Session - [e3/7074c9] Submitted process > map_to_ids (6)
+Sep-18 09:21:53.259 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 09:21:53.260 [Task submitter] INFO  nextflow.Session - [f1/5258eb] Submitted process > map_to_ids (3)
+Sep-18 09:21:53.269 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-18 09:21:53.271 [Task submitter] INFO  nextflow.Session - [e2/667dca] Submitted process > map_to_ids (2)
+Sep-18 09:21:53.286 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: map_to_ids (4); status: COMPLETED; exit: 127; error: -; workDir: /workspaces/MTR/workflows/generate_graphs/work/61/ca90b1bfd0d059d6e4f7ff0582834a]
+Sep-18 09:21:53.287 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-18 09:21:53.292 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: map_to_ids (1); status: COMPLETED; exit: 127; error: -; workDir: /workspaces/MTR/workflows/generate_graphs/work/8b/739200ce1dd79502738da9c2c549ab]
+Sep-18 09:21:53.296 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: map_to_ids (5); status: COMPLETED; exit: 127; error: -; workDir: /workspaces/MTR/workflows/generate_graphs/work/ef/e50d6fd7e6a2e8d04005b3ba54ebe4]
+Sep-18 09:21:53.296 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=map_to_ids (4); work-dir=/workspaces/MTR/workflows/generate_graphs/work/61/ca90b1bfd0d059d6e4f7ff0582834a
+  error [nextflow.exception.ProcessFailedException]: Process `map_to_ids (4)` terminated with an error exit status (127)
+Sep-18 09:21:53.323 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'map_to_ids (4)'
+
+Caused by:
+  Process `map_to_ids (4)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  map_to_ensembl GSE22886-GPL97_series_matrix.rds -o GSE22886-GPL97_series_matrix.ensembl.jld2
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: map_to_ensembl: command not found
+
+Work dir:
+  /workspaces/MTR/workflows/generate_graphs/work/61/ca90b1bfd0d059d6e4f7ff0582834a
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Sep-18 09:21:53.327 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=map_to_ids (5); work-dir=/workspaces/MTR/workflows/generate_graphs/work/ef/e50d6fd7e6a2e8d04005b3ba54ebe4
+  error [nextflow.exception.ProcessFailedException]: Process `map_to_ids (5)` terminated with an error exit status (127)
+Sep-18 09:21:53.329 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=map_to_ids (1); work-dir=/workspaces/MTR/workflows/generate_graphs/work/8b/739200ce1dd79502738da9c2c549ab
+  error [nextflow.exception.ProcessFailedException]: Process `map_to_ids (1)` terminated with an error exit status (127)
+Sep-18 09:21:53.340 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `map_to_ids (4)` terminated with an error exit status (127)
+Sep-18 09:21:53.348 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-18 09:21:53.375 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-18 09:21:53.376 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-18 09:21:53.386 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (3)
+Sep-18 09:21:53.395 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill map_to_ids (6) -- command: kill -TERM 1369; exit: 1 
+ bash: line 1: kill: (1369) - No such process
+
+Sep-18 09:21:53.401 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill map_to_ids (3) -- command: kill -TERM 1381; exit: 1 
+ bash: line 1: kill: (1381) - No such process
+
+Sep-18 09:21:53.408 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill map_to_ids (2) -- command: kill -TERM 1394; exit: 1 
+ bash: line 1: kill: (1394) - No such process
+
+Sep-18 09:21:53.411 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=3; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=3; runningCount=-3; retriesCount=0; abortedCount=3; succeedDuration=0ms; failedDuration=37ms; cachedDuration=0ms;loadCpus=-3; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Sep-18 09:21:53.540 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-18 09:21:53.595 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,55 @@
+Sep-16 16:09:40.665 [main] DEBUG nextflow.cli.Launcher - $> nextflow generate_graphs.nf
+Sep-16 16:09:40.735 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Sep-16 16:09:40.753 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/vscode/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Sep-16 16:09:40.764 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-16 16:09:40.765 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-16 16:09:40.768 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-16 16:09:40.781 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-16 16:09:40.848 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-16 16:09:40.867 [main] DEBUG nextflow.cli.CmdRun - Launching `generate_graphs.nf` [distracted_rosalind] DSL2 - revision: 72c631e86b
+Sep-16 16:09:40.869 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-16 16:09:40.869 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-16 16:09:40.941 [main] DEBUG nextflow.Session - Session UUID: 6c6b6eed-4dc9-41a1-9235-155bb390ee16
+Sep-16 16:09:40.942 [main] DEBUG nextflow.Session - Run name: distracted_rosalind
+Sep-16 16:09:40.943 [main] DEBUG nextflow.Session - Executor pool size: 12
+Sep-16 16:09:40.952 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-16 16:09:40.960 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-16 16:09:40.983 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC 
+  System: Linux 5.15.153.1-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.24+8-post-Debian-2deb11u1
+  Encoding: UTF-8 (UTF-8)
+  Process: 3773@b68572b30d3a [172.17.0.2]
+  CPUs: 12 - Mem: 7.6 GB (175.7 MB) - Swap: 2 GB (135.3 MB)
+Sep-16 16:09:41.005 [main] DEBUG nextflow.Session - Work-dir: /workspaces/MTR/workflows/generate_graphs/work [ext2/ext3]
+Sep-16 16:09:41.006 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/MTR/workflows/generate_graphs/bin
+Sep-16 16:09:41.023 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-16 16:09:41.034 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-16 16:09:41.059 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-16 16:09:41.068 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Sep-16 16:09:41.147 [main] DEBUG nextflow.Session - Session start
+Sep-16 16:09:41.789 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-16 16:09:41.801 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/vscode/.nextflow/secrets/store.json
+Sep-16 16:09:41.808 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2d119405] - activable => nextflow.secret.LocalSecretsProvider@2d119405
+Sep-16 16:09:41.814 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_fe49a4e99bdbea75: /workspaces/MTR/workflows/generate_graphs/generate_graphs.nf
+Sep-16 16:09:41.818 [main] DEBUG nextflow.Session - Session aborted -- Cause: No signature of method: nextflow.script.ScriptBinding.includeparams() is applicable for argument types: () values: []
+Sep-16 16:09:41.828 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingMethodException: No signature of method: nextflow.script.ScriptBinding.includeparams() is applicable for argument types: () values: []
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:111)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.invokeMethod(BaseScript.groovy:155)
+	at org.codehaus.groovy.vmplugin.v8.IndyGuardsFiltersAndSignatures.invokeGroovyObjectInvoker(IndyGuardsFiltersAndSignatures.java:151)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_fe49a4e99bdbea75.runScript(Script_fe49a4e99bdbea75:4)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:159)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:209)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:243)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:138)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:372)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:657)

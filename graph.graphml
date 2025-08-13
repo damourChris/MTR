@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="iri" for="node" attr.name="iri" attr.type="string"/>
+  <key id="ontology_name" for="node" attr.name="ontology_name" attr.type="string"/>
+  <key id="ontology_prefix" for="node" attr.name="ontology_prefix" attr.type="string"/>
+  <key id="short_form" for="node" attr.name="short_form" attr.type="string"/>
+  <key id="obo_id" for="node" attr.name="obo_id" attr.type="string"/>
+  <key id="description" for="node" attr.name="description" attr.type="string"/>
+  <key id="lang" for="node" attr.name="lang" attr.type="string"/>
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <key id="ontology_iri" for="node" attr.name="ontology_iri" attr.type="string"/>
+  <key id="synonyms" for="node" attr.name="synonyms" attr.type="string"/>
+  <key id="is_preferred_root" for="node" attr.name="is_preferred_root" attr.type="string"/>
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <graph id="G" edgedefault="directed"/>
+</graphml>

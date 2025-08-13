@@ -1,0 +1,1570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="iri" for="node" attr.name="iri" attr.type="string"/>
+  <key id="ontology_name" for="node" attr.name="ontology_name" attr.type="string"/>
+  <key id="ontology_prefix" for="node" attr.name="ontology_prefix" attr.type="string"/>
+  <key id="short_form" for="node" attr.name="short_form" attr.type="string"/>
+  <key id="obo_id" for="node" attr.name="obo_id" attr.type="string"/>
+  <key id="description" for="node" attr.name="description" attr.type="string"/>
+  <key id="lang" for="node" attr.name="lang" attr.type="string"/>
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <key id="ontology_iri" for="node" attr.name="ontology_iri" attr.type="string"/>
+  <key id="synonyms" for="node" attr.name="synonyms" attr.type="string"/>
+  <key id="is_preferred_root" for="node" attr.name="is_preferred_root" attr.type="string"/>
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <node id="5">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0033371</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0033371</data>
+      <data key="obo_id">GO:0033371</data>
+      <data key="description">["A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of a secretory granule in a T cell. A secretory granule is a small subcellular vesicle, surrounded by a membrane, that is formed from the Golgi apparatus and contains a highly concentrated protein destined for secretion."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell secretory granule organization</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T cell secretory granule organisation", "T lymphocyte secretory granule organization", "T-cell secretory granule organization", "T-lymphocyte secretory granule organization", "T cell secretory granule organization and biogenesis", "T-lymphocyte secretory granule maturation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="56">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0060326</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0060326</data>
+      <data key="obo_id">GO:0060326</data>
+      <data key="description">["The directed movement of a motile cell guided by a specific chemical concentration gradient. Movement may be towards a higher concentration (positive chemotaxis) or towards a lower concentration (negative chemotaxis)."]</data>
+      <data key="lang">en</data>
+      <data key="label">cell chemotaxis</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="35">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_2000020</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_2000020</data>
+      <data key="obo_id">CL:2000020</data>
+      <data key="description">["Any native cell that is part of a inner cell mass."]</data>
+      <data key="lang">en</data>
+      <data key="label">inner cell mass cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="55">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0051651</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0051651</data>
+      <data key="obo_id">GO:0051651</data>
+      <data key="description">["Any process in which a substance or cellular entity, such as a protein complex or organelle, is maintained in a specific location within, or in the membrane of, a cell, and is prevented from moving elsewhere."]</data>
+      <data key="lang">en</data>
+      <data key="label">maintenance of location in cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["cellular retention", "cellular sequestering", "cellular storage", "intracellular retention", "intracellular sequestering", "intracellular storage", "maintenance of intracellular localization", "maintenance of localization within cell", "retention within cell", "sequestering within cell", "storage within cell", "maintenance of cellular localization", "maintenance of localization in cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="110">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0007005</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0007005</data>
+      <data key="obo_id">CL:0007005</data>
+      <data key="description">["Cell that is part of the notochord.", "NOTE: TO DO, notochord development still needs work."]</data>
+      <data key="lang">en</data>
+      <data key="label">notochordal cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="60">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0016049</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0016049</data>
+      <data key="obo_id">GO:0016049</data>
+      <data key="description">["The process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present."]</data>
+      <data key="lang">en</data>
+      <data key="label">cell growth</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["cellular growth", "growth of cell", "cell expansion", "metabolic process resulting in cell growth", "metabolism resulting in cell growth", "non-developmental cell growth", "non-developmental growth of a unicellular organism"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="30">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000520</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000520</data>
+      <data key="obo_id">CL:0000520</data>
+      <data key="description">String[]</data>
+      <data key="lang">en</data>
+      <data key="label">prokaryotic cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="32">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000891</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000891</data>
+      <data key="obo_id">CL:0000891</data>
+      <data key="description">["A type of cell containing lipids in small vacuoles and typically seen in atherolosclerotic lesions, as well as other conditions."]</data>
+      <data key="lang">en</data>
+      <data key="label">foam cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="6">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0002419</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0002419</data>
+      <data key="obo_id">CL:0002419</data>
+      <data key="description">["A T cell that expresses a T cell receptor complex and has completed T cell selection."]</data>
+      <data key="lang">en</data>
+      <data key="label">mature T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["CD3e-positive T cell", "mature T-cell", "CD3epsilon T cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="67">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000064</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000064</data>
+      <data key="obo_id">CL:0000064</data>
+      <data key="description">["A cell that has a filiform extrusion of the cell surface."]</data>
+      <data key="lang">en</data>
+      <data key="label">ciliated cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="45">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000445</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000445</data>
+      <data key="obo_id">CL:0000445</data>
+      <data key="description">String[]</data>
+      <data key="lang">en</data>
+      <data key="label">apoptosis fated cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="73">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0001061</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0001061</data>
+      <data key="obo_id">CL:0001061</data>
+      <data key="description">["A cell found in an organism or derived from an organism exhibiting a phenotype that deviates from the expected phenotype of any native cell type of that organism. Abnormal cells are typically found in disease states or disease models.", "https://github.com/obophenotype/cell-ontology/issues/448"]</data>
+      <data key="lang">en</data>
+      <data key="label">abnormal cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="64">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0098794</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0098794</data>
+      <data key="obo_id">GO:0098794</data>
+      <data key="description">["The part of a synapse that is part of the post-synaptic cell."]</data>
+      <data key="lang">en</data>
+      <data key="label">postsynapse</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="90">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0002320</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0002320</data>
+      <data key="obo_id">CL:0002320</data>
+      <data key="description">["A cell of the supporting or framework tissue of the body, arising chiefly from the embryonic mesoderm and including adipose tissue, cartilage, and bone."]</data>
+      <data key="lang">en</data>
+      <data key="label">connective tissue cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="4">
+      <data key="iri">http://purl.obolibrary.org/obo/UBERON_0010393</data>
+      <data key="ontology_name">uberon</data>
+      <data key="ontology_prefix">UBERON</data>
+      <data key="short_form">UBERON_0010393</data>
+      <data key="obo_id">UBERON:0010393</data>
+      <data key="description">String[]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell domain</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/uberon.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="13">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000542</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000542</data>
+      <data key="obo_id">CL:0000542</data>
+      <data key="description">["A lymphocyte is a leukocyte commonly found in the blood and lymph that has the characteristics of a large nucleus, a neutral staining cytoplasm, and prominent heterochromatin.", "Editors note: consider adding taxon constraint to vertebrata (PMID:18025161)"]</data>
+      <data key="lang">en</data>
+      <data key="label">lymphocyte</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="54">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000630</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000630</data>
+      <data key="obo_id">CL:0000630</data>
+      <data key="description">["A cell whose primary function is to support other cell types."]</data>
+      <data key="lang">en</data>
+      <data key="label">supporting cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["supportive cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="63">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0048469</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0048469</data>
+      <data key="obo_id">GO:0048469</data>
+      <data key="description">["The cellular developmental process, independent of morphogenetic (shape) change, that is required for a specific cell to attain its fully functional state."]</data>
+      <data key="lang">en</data>
+      <data key="label">cell maturation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["functional differentiation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="86">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0001034</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0001034</data>
+      <data key="obo_id">CL:0001034</data>
+      <data key="description">["A cell that is maintained or propagated in a controlled artificial environment for use in an investigation.", "'In vitro', translating literally to 'in glass', typically refers to a controlled, often sterile, laboratory setting where cells or other specimens are placed by some agent for the purpose of studying or manipulating them as part of some research investigation. 'In vitro' is intended to contrast with 'native',which refers to cells or other biological entities that are found in a natural setting. It describes unicellular organisms removed from a natural environement and multicellular organism cells removed from an organism, or cells derived in culture from such displaced cells."]</data>
+      <data key="lang">en</data>
+      <data key="label">cell in vitro</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="104">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_4033054</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_4033054</data>
+      <data key="obo_id">CL:4033054</data>
+      <data key="description">["A cell that is adjacent to a vessel. A perivascular cell plays a crucial role in maintaining vascular function and tissue homeostasis. This cell type regulates vessel integrity and flow dynamics."]</data>
+      <data key="lang">en</data>
+      <data key="label">perivascular cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="91">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000627</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000627</data>
+      <data key="obo_id">CL:0000627</data>
+      <data key="description">["A cell involved in transporting nutrients, minerals, water, gases and other chemicals between cells for a variety of purposes including conveying nutrition to other tissues, removing waste products from the tissues, conveying gases for respiration, distributing heat and repelling invasion of foreign substances."]</data>
+      <data key="lang">en</data>
+      <data key="label">transporting cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="62">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_1000497</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_1000497</data>
+      <data key="obo_id">CL:1000497</data>
+      <data key="description">["A cell that is part of a kidney."]</data>
+      <data key="lang">en</data>
+      <data key="label">kidney cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="58">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000151</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000151</data>
+      <data key="obo_id">CL:0000151</data>
+      <data key="description">["A cell that specializes in controlled release of one or more substances."]</data>
+      <data key="lang">en</data>
+      <data key="label">secretory cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="52">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000473</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000473</data>
+      <data key="obo_id">CL:0000473</data>
+      <data key="description">["A cell whose primary function is to protect the organism."]</data>
+      <data key="lang">en</data>
+      <data key="label">defensive cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="12">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009031</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009031</data>
+      <data key="obo_id">CL:0009031</data>
+      <data key="description">["A T cell that is located in a vermiform appendix.", "This is a general grouping term created for use in the EMBL-EBI Single Cell Expression Atlas anatomograms. Please use a more specific cell type term for annotation if possible, given the information available to you."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell of appendix</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["T cell of appendix vermiformis", "T cell of vermiform appendix", "appendix T cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="28">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_2000021</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_2000021</data>
+      <data key="obo_id">CL:2000021</data>
+      <data key="description">["Any native cell that is part of a sebaceous gland."]</data>
+      <data key="lang">en</data>
+      <data key="label">sebaceous gland cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="75">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0012505</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0012505</data>
+      <data key="obo_id">GO:0012505</data>
+      <data key="description">["A collection of membranous structures involved in transport within the cell. The main components of the endomembrane system are endoplasmic reticulum, Golgi bodies, vesicles, cell membrane and nuclear envelope. Members of the endomembrane system pass materials through each other or though the use of vesicles."]</data>
+      <data key="lang">en</data>
+      <data key="label">endomembrane system</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="23">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000789</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000789</data>
+      <data key="obo_id">CL:0000789</data>
+      <data key="description">["A T cell that expresses an alpha-beta T cell receptor complex."]</data>
+      <data key="lang">en</data>
+      <data key="label">alpha-beta T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["alpha-beta T lymphocyte", "alpha-beta T-cell", "alpha-beta T-lymphocyte"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="111">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0098862</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0098862</data>
+      <data key="obo_id">GO:0098862</data>
+      <data key="description">["A cell part consisting of multiple, closely packed actin-based cell projections."]</data>
+      <data key="lang">en</data>
+      <data key="label">cluster of actin-based cell projections</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="92">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0019725</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0019725</data>
+      <data key="obo_id">GO:0019725</data>
+      <data key="description">["Any process involved in the maintenance of an internal steady state at the level of the cell."]</data>
+      <data key="lang">en</data>
+      <data key="label">cellular homeostasis</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="41">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0007023</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0007023</data>
+      <data key="obo_id">CL:0007023</data>
+      <data key="description">["Epidermal cell rich in mitochondria. In amphibians, appears during metamorphosis."]</data>
+      <data key="lang">en</data>
+      <data key="label">flask cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="43">
+      <data key="iri">http://purl.obolibrary.org/obo/UBERON_0000913</data>
+      <data key="ontology_name">uberon</data>
+      <data key="ontology_prefix">UBERON</data>
+      <data key="short_form">UBERON_0000913</data>
+      <data key="obo_id">UBERON:0000913</data>
+      <data key="description">["Interstitial fluid is a bodily fluid consisting of a solution which bathes and surrounds the cells of multicellular animals. It is the main component of the extracellular fluid, which also includes plasma and transcellular fluid."]</data>
+      <data key="lang">en</data>
+      <data key="label">interstitial fluid</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/uberon.owl</data>
+      <data key="synonyms">["intercellular fluid", "tissue fluid"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="11">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0001768</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0001768</data>
+      <data key="obo_id">GO:0001768</data>
+      <data key="description">["The directed orientation of T cell signaling molecules and associated membrane rafts towards a chemokine gradient or a contact point with antigen presenting cell."]</data>
+      <data key="lang">en</data>
+      <data key="label">establishment of T cell polarity</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T cell polarization", "T lymphocyte polarization", "T-cell polarization", "establishment of T lymphocyte polarity", "establishment of T-cell polarity", "establishment of T-lymphocyte polarity"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="36">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0051674</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0051674</data>
+      <data key="obo_id">GO:0051674</data>
+      <data key="description">["Any process in which a cell is transported to, and/or maintained in, a specific location."]</data>
+      <data key="lang">en</data>
+      <data key="label">localization of cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["cell localization", "establishment and maintenance of cell localization", "establishment and maintenance of localization of cell", "localisation of cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="68">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000422</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000422</data>
+      <data key="obo_id">CL:0000422</data>
+      <data key="description">["A cell whose primary function is to cause growth by stimulating cell division in its immediate cellular environment."]</data>
+      <data key="lang">en</data>
+      <data key="label">mitogenic signaling cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="69">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_4030031</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_4030031</data>
+      <data key="obo_id">CL:4030031</data>
+      <data key="description">["Any cell that is located within the interstitium between the cells most prominent in defining a given tissue. \"Interstitial cell\" is a morphological term and refers to a variety of cells with differing origins and phenotypes."]</data>
+      <data key="lang">en</data>
+      <data key="label">interstitial cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="98">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000000</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000000</data>
+      <data key="obo_id">CL:0000000</data>
+      <data key="description">["A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.", "The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one)."]</data>
+      <data key="lang">en</data>
+      <data key="label">cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="82">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009010</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009010</data>
+      <data key="obo_id">CL:0009010</data>
+      <data key="description">["Transit-amplifying cells (TACs) are an undifferentiated population in transition between stem cells and differentiated cells."]</data>
+      <data key="lang">en</data>
+      <data key="label">transit amplifying cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["transient amplifying cell", "transit amplifying progenitor cell", "transit-amplifying cell", "TAC", "TACs"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="85">
+      <data key="iri">http://purl.obolibrary.org/obo/UBERON_0000061</data>
+      <data key="ontology_name">uberon</data>
+      <data key="ontology_prefix">UBERON</data>
+      <data key="short_form">UBERON_0000061</data>
+      <data key="obo_id">UBERON:0000061</data>
+      <data key="description">["Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome."]</data>
+      <data key="lang">en</data>
+      <data key="label">anatomical structure</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/uberon.owl</data>
+      <data key="synonyms">["biological structure", "connected biological structure"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="39">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_1990748</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_1990748</data>
+      <data key="obo_id">GO:1990748</data>
+      <data key="description">["Any process carried out at the cellular level that reduces or removes the toxicity of a toxic substance. These may include transport of the toxic substance away from sensitive areas and to compartments or complexes whose purpose is sequestration of the toxic substance."]</data>
+      <data key="lang">en</data>
+      <data key="label">cellular detoxification</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="84">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0030312</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0030312</data>
+      <data key="obo_id">GO:0030312</data>
+      <data key="description">["A structure that lies outside the plasma membrane and surrounds the entire cell or cells. This does not include the periplasmic space.", "The outer membrane (of gram negative bacteria) or cell wall (of yeast or Gram positive bacteria) are defined as parts of this structure, see 'external encapsulating structure part'."]</data>
+      <data key="lang">en</data>
+      <data key="label">external encapsulating structure</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="77">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0002321</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0002321</data>
+      <data key="obo_id">CL:0002321</data>
+      <data key="description">["A cell of the embryo."]</data>
+      <data key="lang">en</data>
+      <data key="label">embryonic cell (metazoa)</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="7">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0031295</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0031295</data>
+      <data key="obo_id">GO:0031295</data>
+      <data key="description">["The process of providing, via surface-bound receptor-ligand pairs, a second, antigen-independent, signal in addition to that provided by the T cell receptor to augment T cell activation."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell costimulation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T cell co-stimulation", "T lymphocyte costimulation", "T-cell co-stimulation", "T-cell costimulation", "T-lymphocyte costimulation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="25">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0002457</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0002457</data>
+      <data key="obo_id">GO:0002457</data>
+      <data key="description">["The process in which a T cell expresses antigen (peptide or lipid) on its cell surface in association with an MHC protein complex."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell antigen processing and presentation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte antigen processing and presentation", "T-cell antigen processing and presentation", "T-lymphocyte antigen processing and presentation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="95">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0010017</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0010017</data>
+      <data key="obo_id">CL:0010017</data>
+      <data key="description">["A zygote in a plant or an animal."]</data>
+      <data key="lang">en</data>
+      <data key="label">zygote</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="108">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000349</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000349</data>
+      <data key="obo_id">CL:0000349</data>
+      <data key="description">["Any cell that is part of some extraembryonic structure."]</data>
+      <data key="lang">en</data>
+      <data key="label">extraembryonic cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="71">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0002494</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0002494</data>
+      <data key="obo_id">CL:0002494</data>
+      <data key="description">["A cell located in the heart, including both muscle and non muscle cells.", "From Onard of the FMA: Cardiac muscle cell or cardiac myocyte is a striated muscle cell. Cardiocyte on the other hand is any cell in the heart which includes cells other than muscle cells (e.g. endothelial cell of endocardium). Unless there is a consensus among anatomists that cardiocytes refer only to muscle cells, we will treat them as a general class of cells in the heart."]</data>
+      <data key="lang">en</data>
+      <data key="label">cardiocyte</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["heart cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="66">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000412</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000412</data>
+      <data key="obo_id">CL:0000412</data>
+      <data key="description">["A cell that contains more than two haploid sets of chromosomes."]</data>
+      <data key="lang">en</data>
+      <data key="label">polyploid cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="76">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0007001</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0007001</data>
+      <data key="obo_id">CL:0007001</data>
+      <data key="description">["Cell that has the potential to form a skeletal cell type (e.g. cells in periosteum, cells in marrow) and produce extracellular matrix (often mineralized) and skeletal tissue (often mineralized).", "Needs logical definition. Should be capable_of skeletal system morphogenesis? or skeletal tissue development? needs to be added to GO. NOTES:a cell type of the early embryo (see also: mesenchymal cells) that will give rise to mineralized connective tissue. Scleroblasts can differentiate into osteoblasts (bone-forming cells), chondroblasts (cartilage-forming cells), odontoblasts (dentin-forming cells), ameloblasts (enamel-forming cells). The mesenchymal cells developing into osteoblasts and chondroblasts are derived from the mesoderm. Those developing into odontoblasts are neural crest cells. Those developing into ameloblasts are derived from the ectoderm. (http://www.copewithcytokines.de/cope.cgi?key=scleroblasts)"]</data>
+      <data key="lang">en</data>
+      <data key="label">skeletogenic cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["scleroblast"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="103">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0007022</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0007022</data>
+      <data key="obo_id">CL:0007022</data>
+      <data key="description">["A specialized pore forming cell of the follicle, located adjacent to the animal pole of the oocyte. The micropylar cell makes the single micropyle (pore) through the chorion through which the sperm fertilizes the egg."]</data>
+      <data key="lang">en</data>
+      <data key="label">micropylar cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["plug cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="34">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000415</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000415</data>
+      <data key="obo_id">CL:0000415</data>
+      <data key="description">["A cell whose nucleus has two haploid genomes."]</data>
+      <data key="lang">en</data>
+      <data key="label">diploid cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="50">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_1000601</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_1000601</data>
+      <data key="obo_id">CL:1000601</data>
+      <data key="description">["Any cell that is part of some ureter."]</data>
+      <data key="lang">en</data>
+      <data key="label">ureteral cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="59">
+      <data key="iri">http://purl.obolibrary.org/obo/NCBITaxon_131567</data>
+      <data key="ontology_name">ncbitaxon</data>
+      <data key="ontology_prefix">NCBITaxon</data>
+      <data key="short_form">NCBITaxon_131567</data>
+      <data key="obo_id">NCBITaxon:131567</data>
+      <data key="description">String[]</data>
+      <data key="lang">en</data>
+      <data key="label">cellular organisms</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/ncbitaxon.owl</data>
+      <data key="synonyms">["biota"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="93">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0048468</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0048468</data>
+      <data key="obo_id">GO:0048468</data>
+      <data key="description">["The cellular developmental process in which a specific cell progresses from an immature to a mature state. Cell development start once cell commitment has taken place."]</data>
+      <data key="lang">en</data>
+      <data key="label">cell development</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["terminal differentiation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="2">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0042098</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0042098</data>
+      <data key="obo_id">GO:0042098</data>
+      <data key="description">["The expansion of a T cell population by cell division. Follows T cell activation."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell proliferation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte proliferation", "T-cell proliferation", "T-lymphocyte proliferation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="10">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0002456</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0002456</data>
+      <data key="obo_id">GO:0002456</data>
+      <data key="description">["Any process involved in the carrying out of an immune response by a T cell."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell mediated immunity</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["cell-mediated immunity", "cellular immune response", "T lymphocyte mediated immunity", "T-cell mediated immunity", "T-lymphocyte mediated immunity"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="18">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0043029</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0043029</data>
+      <data key="obo_id">GO:0043029</data>
+      <data key="description">["The process of regulating the proliferation and elimination of T cells such that the total number of T cells within a whole or part of an organism is stable over time in the absence of an outside stimulus.", "Note that this term represents the return of T cell levels to stable numbers following an immune response as well as the proliferation and elimination of T cells required to maintain stable numbers in the absence of an outside stimulus."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell homeostasis</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte homeostasis", "T-cell homeostasis", "T-lymphocyte homeostasis"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="26">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0070231</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0070231</data>
+      <data key="obo_id">GO:0070231</data>
+      <data key="description">["Any apoptotic process in a T cell, a type of lymphocyte whose defining characteristic is the expression of a T cell receptor complex."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell apoptotic process</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte apoptosis", "T-cell apoptosis", "T-lymphocyte apoptosis", "programmed cell death of T cells by apoptosis", "T cell apoptosis"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="27">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000827</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000827</data>
+      <data key="obo_id">CL:0000827</data>
+      <data key="description">["A lymphoid progenitor cell of the T cell lineage, with some lineage specific marker expression, but not yet fully committed to the T cell lineage."]</data>
+      <data key="lang">en</data>
+      <data key="label">pro-T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["pro-T lymphocyte", "progenitor T cell", "DN1 cell", "DN1 thymocyte", "TN1 cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="42">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000197</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000197</data>
+      <data key="obo_id">CL:0000197</data>
+      <data key="description">["A cell that is capable of detection of a stimulus involved in sensory perception."]</data>
+      <data key="lang">en</data>
+      <data key="label">sensory receptor cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["receptor cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="87">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000225</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000225</data>
+      <data key="obo_id">CL:0000225</data>
+      <data key="description">["A cell that lacks a nucleus."]</data>
+      <data key="lang">en</data>
+      <data key="label">anucleate cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["non-nucleated cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="100">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0002319</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0002319</data>
+      <data key="obo_id">CL:0002319</data>
+      <data key="description">["A cell that is part of the nervous system."]</data>
+      <data key="lang">en</data>
+      <data key="label">neural cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="79">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0002242</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0002242</data>
+      <data key="obo_id">CL:0002242</data>
+      <data key="description">["A cell containing at least one nucleus."]</data>
+      <data key="lang">en</data>
+      <data key="label">nucleate cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="16">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009064</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009064</data>
+      <data key="obo_id">CL:0009064</data>
+      <data key="description">["A T cell located in the lymph node paracortex, where macrophages and dendritic cells present antigenic peptides to these naïve T cells, stimulating them to become activated helper T cells or cytotoxic T lymphocytes."]</data>
+      <data key="lang">en</data>
+      <data key="label">lymph node paracortex T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["paracortex T cell", "paracortical T cell", "T cell of lymph node paracortex"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="20">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0072678</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0072678</data>
+      <data key="obo_id">GO:0072678</data>
+      <data key="description">["The movement of a T cell within or between different tissues and organs of the body."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell migration</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte migration", "T-cell migration", "T-lymphocyte migration"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="81">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000293</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000293</data>
+      <data key="obo_id">CL:0000293</data>
+      <data key="description">["A cell whose primary function is to provide structural support, to provide strength and physical integrity to the organism."]</data>
+      <data key="lang">en</data>
+      <data key="label">structural cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="19">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009051</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009051</data>
+      <data key="obo_id">CL:0009051</data>
+      <data key="description">["A T cell that is located in the anorectum.", "This is a general grouping term created for use in the EMBL-EBI Single Cell Expression Atlas anatomograms. Please use a more specific cell type term for annotation if possible, given the information available to you."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell of anorectum</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="49">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0031252</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0031252</data>
+      <data key="obo_id">GO:0031252</data>
+      <data key="description">["The area of a motile cell closest to the direction of movement."]</data>
+      <data key="lang">en</data>
+      <data key="label">cell leading edge</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["front of cell", "leading edge of cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="44">
+      <data key="iri">http://purl.obolibrary.org/obo/UBERON_0010000</data>
+      <data key="ontology_name">uberon</data>
+      <data key="ontology_prefix">UBERON</data>
+      <data key="short_form">UBERON_0010000</data>
+      <data key="obo_id">UBERON:0010000</data>
+      <data key="description">["An anatomical structure that has more than one cell as a part."]</data>
+      <data key="lang">en</data>
+      <data key="label">multicellular anatomical structure</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/uberon.owl</data>
+      <data key="synonyms">["multicellular structure"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="9">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0002870</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0002870</data>
+      <data key="obo_id">GO:0002870</data>
+      <data key="description">["Any process contributing to anergy in T cells, a state of functional inactivation which is part of T cell tolerance induction."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell anergy</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte anergy", "T-cell anergy", "T-lymphocyte anergy"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="31">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000188</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000188</data>
+      <data key="obo_id">CL:0000188</data>
+      <data key="description">["A somatic cell located in skeletal muscle."]</data>
+      <data key="lang">en</data>
+      <data key="label">cell of skeletal muscle</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["skeletal muscle cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="74">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000325</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000325</data>
+      <data key="obo_id">CL:0000325</data>
+      <data key="description">["A cell that is specialised to accumulate a particular substance(s)."]</data>
+      <data key="lang">en</data>
+      <data key="label">stuff accumulating cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="106">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000215</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000215</data>
+      <data key="obo_id">CL:0000215</data>
+      <data key="description">["A cell whose primary function is to prevent the transport of stuff across compartments."]</data>
+      <data key="lang">en</data>
+      <data key="label">barrier cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="109">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000080</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000080</data>
+      <data key="obo_id">CL:0000080</data>
+      <data key="description">["A cell which moves among different tissues of the body, via blood, lymph, or other medium."]</data>
+      <data key="lang">en</data>
+      <data key="label">circulating cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="61">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0011115</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0011115</data>
+      <data key="obo_id">CL:0011115</data>
+      <data key="description">["A cell that, by division or terminal differentiation, can give rise to other cell types.", "Work is needed on GO 'cell differentiation' before it is clear whether the equivalent class definition 'native cell' that capable_of some 'cell differentiation' works. Also, may want to consider merging this with non-terminally differentiated cell."]</data>
+      <data key="lang">en</data>
+      <data key="label">precursor cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="29">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000183</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000183</data>
+      <data key="obo_id">CL:0000183</data>
+      <data key="description">["A cell whose primary function is to shorten."]</data>
+      <data key="lang">en</data>
+      <data key="label">contractile cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="94">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_1000600</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_1000600</data>
+      <data key="obo_id">CL:1000600</data>
+      <data key="description">["Any cell that is part of some lower urinary tract."]</data>
+      <data key="lang">en</data>
+      <data key="label">lower urinary tract cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="107">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000413</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000413</data>
+      <data key="obo_id">CL:0000413</data>
+      <data key="description">["A cell whose nucleus contains a single haploid genome."]</data>
+      <data key="lang">en</data>
+      <data key="label">haploid cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="46">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000212</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000212</data>
+      <data key="obo_id">CL:0000212</data>
+      <data key="description">["A cell that takes up and metabolizes substances."]</data>
+      <data key="lang">en</data>
+      <data key="label">absorptive cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="57">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0000902</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0000902</data>
+      <data key="obo_id">GO:0000902</data>
+      <data key="description">["The developmental process in which the size or shape of a cell is generated and organized."]</data>
+      <data key="lang">en</data>
+      <data key="label">cell morphogenesis</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["cellular morphogenesis"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="102">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0042995</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0042995</data>
+      <data key="obo_id">GO:0042995</data>
+      <data key="description">["A prolongation or process extending from a cell, e.g. a flagellum or axon."]</data>
+      <data key="lang">en</data>
+      <data key="label">cell projection</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["cell process", "cellular process", "cellular projection"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="70">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009005</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009005</data>
+      <data key="obo_id">CL:0009005</data>
+      <data key="description">["Any cell in a salivary gland."]</data>
+      <data key="lang">en</data>
+      <data key="label">salivary gland cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="21">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0042110</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0042110</data>
+      <data key="obo_id">GO:0042110</data>
+      <data key="description">["The change in morphology and behavior of a mature or immature T cell resulting from exposure to a mitogen, cytokine, chemokine, cellular ligand, or an antigen for which it is specific."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell activation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte activation", "T-cell activation", "T-lymphocyte activation"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="38">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0044297</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0044297</data>
+      <data key="obo_id">GO:0044297</data>
+      <data key="description">["The portion of a cell bearing surface projections such as axons, dendrites, cilia, or flagella that includes the nucleus, but excludes all cell projections.", "Note that 'cell body' and 'cell soma' are not used in the literature for cells that lack projections, nor for some cells (e.g. yeast with mating projections) that do have projections."]</data>
+      <data key="lang">en</data>
+      <data key="label">cell body</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["cell soma"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="88">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000039</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000039</data>
+      <data key="obo_id">CL:0000039</data>
+      <data key="description">["A cell that is within the developmental lineage of gametes and is able to pass along its genetic material to offspring.", "Originally this term had some plant germ line cell children."]</data>
+      <data key="lang">en</data>
+      <data key="label">germ line cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="101">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000219</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000219</data>
+      <data key="obo_id">CL:0000219</data>
+      <data key="description">["A cell that moves by its own activities."]</data>
+      <data key="lang">en</data>
+      <data key="label">motile cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="78">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0005622</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0005622</data>
+      <data key="obo_id">GO:0005622</data>
+      <data key="description">["A component of a cell contained within (but not including) the plasma membrane. In eukaryotes it includes the nucleus and cytoplasm."]</data>
+      <data key="lang">en</data>
+      <data key="label">intracellular anatomical structure</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["internal to cell", "intracellular", "protoplasm", "nucleocytoplasm", "protoplast"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="105">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0010496</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0010496</data>
+      <data key="obo_id">GO:0010496</data>
+      <data key="description">["The movement of substances between cells."]</data>
+      <data key="lang">en</data>
+      <data key="label">intercellular transport</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["single organism intercellular transport", "single-organism intercellular transport"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="72">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000988</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000988</data>
+      <data key="obo_id">CL:0000988</data>
+      <data key="description">["A cell of a hematopoietic lineage."]</data>
+      <data key="lang">en</data>
+      <data key="label">hematopoietic cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["haematopoietic cell", "haemopoietic cell", "hemopoietic cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="24">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0030217</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0030217</data>
+      <data key="obo_id">GO:0030217</data>
+      <data key="description">["The process in which a precursor cell type acquires characteristics of a more mature T-cell. A T cell is a type of lymphocyte whose definin characteristic is the expression of a T cell receptor complex.", "Note that the term 'thymocyte differentiation' was merged into this term because thymocytes are T cells, and thus the term was essentially redundant. Note that immunologists typically use the word 'development' to refer to cells of B or T cell lineages undergoing the process that GO describes as 'cell differentiation'."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell differentiation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte differentiation", "T-cell differentiation", "T-lymphocyte differentiation", "T cell development"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="8">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000084</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000084</data>
+      <data key="obo_id">CL:0000084</data>
+      <data key="description">["A type of lymphocyte whose defining characteristic is the expression of a T cell receptor complex."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["T lymphocyte", "T-cell", "T-lymphocyte", "immature T cell", "mature T cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="17">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0002420</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0002420</data>
+      <data key="obo_id">CL:0002420</data>
+      <data key="description">["A T cell that has not completed T cell selection."]</data>
+      <data key="lang">en</data>
+      <data key="label">immature T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["immature T-cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="37">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000255</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000255</data>
+      <data key="obo_id">CL:0000255</data>
+      <data key="description">["Any cell that only exists in Eukaryota."]</data>
+      <data key="lang">en</data>
+      <data key="label">eukaryotic cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="1">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009046</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009046</data>
+      <data key="obo_id">CL:0009046</data>
+      <data key="description">["A T cell found in the lymph node medullary sinus.", "This is a general grouping term created for use in the EMBL-EBI Single Cell Expression Atlas anatomograms. Please use a more specific cell type term for annotation if possible, given the information available to you."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell of medullary sinus of lymph node</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="53">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009003</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009003</data>
+      <data key="obo_id">CL:0009003</data>
+      <data key="description">["Any cell in the midgut (middle subdivision of a digestive tract) of an insect larva."]</data>
+      <data key="lang">en</data>
+      <data key="label">larval midgut cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="22">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_4033069</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_4033069</data>
+      <data key="obo_id">CL:4033069</data>
+      <data key="description">["A(n) T cell that is cycling."]</data>
+      <data key="lang">en</data>
+      <data key="label">cycling T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["proliferating T cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="47">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0009002</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0009002</data>
+      <data key="obo_id">CL:0009002</data>
+      <data key="description">["Any cell participating in the inflammatory response to a foreign substance, e.g. neutrophil, macrophage."]</data>
+      <data key="lang">en</data>
+      <data key="label">inflammatory cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="83">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000677</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000677</data>
+      <data key="obo_id">CL:0000677</data>
+      <data key="description">["Cell of the intestinal epithelium with a brush border made up of many parallel packed microvilli; associated with absorption, particularly of macromolecules."]</data>
+      <data key="lang">en</data>
+      <data key="label">gut absorptive cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="99">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000211</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000211</data>
+      <data key="obo_id">CL:0000211</data>
+      <data key="description">["A cell whose function is determined by the generation or the reception of an electric signal."]</data>
+      <data key="lang">en</data>
+      <data key="label">electrically active cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="89">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0051649</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0051649</data>
+      <data key="obo_id">GO:0051649</data>
+      <data key="description">["Any process, occurring in a cell, that localizes a substance or cellular component. This may occur via movement, tethering or selective degradation."]</data>
+      <data key="lang">en</data>
+      <data key="label">establishment of localization in cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["establishment of localisation in cell", "establishment of intracellular localization", "establishment of localization within cell", "positioning within cell", "establishment of cellular localization"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="14">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000798</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000798</data>
+      <data key="obo_id">CL:0000798</data>
+      <data key="description">["A T cell that expresses a gamma-delta T cell receptor complex.", "Note that gamma-delta T cells have both thymic and extrathymic differentiation pathways."]</data>
+      <data key="lang">en</data>
+      <data key="label">gamma-delta T cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["gamma-delta T lymphocyte", "gamma-delta T-cell", "gamma-delta T-lymphocyte", "gammadelta T cell", "gd T cell"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="3">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0002517</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0002517</data>
+      <data key="obo_id">GO:0002517</data>
+      <data key="description">["A process involving any mechanism for tolerance induction in T cells."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell tolerance induction</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte tolerance induction", "T-cell tolerance induction", "T-lymphocyte tolerance induction"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="80">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000066</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000066</data>
+      <data key="obo_id">CL:0000066</data>
+      <data key="description">["A cell that is usually found in a two-dimensional sheet with a free surface. The cell has a cytoskeleton that allows for tight cell to cell contact and for cell polarity where apical part is directed towards the lumen and the basal part to the basal lamina."]</data>
+      <data key="lang">en</data>
+      <data key="label">epithelial cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">["epitheliocyte"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="96">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0002559</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0002559</data>
+      <data key="obo_id">CL:0002559</data>
+      <data key="description">["An animal cell that is part of a hair follicle."]</data>
+      <data key="lang">en</data>
+      <data key="label">hair follicle cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="51">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000329</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000329</data>
+      <data key="obo_id">CL:0000329</data>
+      <data key="description">["Any cell that is capable of some oxygen transport."]</data>
+      <data key="lang">en</data>
+      <data key="label">oxygen accumulating cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="33">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000725</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000725</data>
+      <data key="obo_id">CL:0000725</data>
+      <data key="description">["Any cell that is capable of some nitrogen fixation."]</data>
+      <data key="lang">en</data>
+      <data key="label">nitrogen fixing cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="40">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_4029001</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_4029001</data>
+      <data key="obo_id">CL:4029001</data>
+      <data key="description">["A cell that supports the development of a gamete by providing it cytoplasmic material (including entire organelles) by direct cross-membrane channels (del Pino, 2021)."]</data>
+      <data key="lang">en</data>
+      <data key="label">gamete-nursing cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="48">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0001035</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0001035</data>
+      <data key="obo_id">CL:0001035</data>
+      <data key="description">["A connective tissue cell found in bone."]</data>
+      <data key="lang">en</data>
+      <data key="label">bone cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="15">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0045058</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0045058</data>
+      <data key="obo_id">GO:0045058</data>
+      <data key="description">["The process in which T cells that express T cell receptors that are restricted by self MHC protein complexes and tolerant to self antigens are selected for further maturation."]</data>
+      <data key="lang">en</data>
+      <data key="label">T cell selection</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">["T lymphocyte selection", "T-cell selection", "T-lymphocyte selection"]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="65">
+      <data key="iri">http://purl.obolibrary.org/obo/GO_0030154</data>
+      <data key="ontology_name">go</data>
+      <data key="ontology_prefix">GO</data>
+      <data key="short_form">GO_0030154</data>
+      <data key="obo_id">GO:0030154</data>
+      <data key="description">["The cellular developmental process in which a relatively unspecialized cell, e.g. embryonic or regenerative cell, acquires specialized structural and/or functional features that characterize a specific cell. Differentiation includes the processes involved in commitment of a cell to a specific fate and its subsequent development to the mature state."]</data>
+      <data key="lang">en</data>
+      <data key="label">cell differentiation</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/go/extensions/go-plus.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <node id="97">
+      <data key="iri">http://purl.obolibrary.org/obo/CL_0000628</data>
+      <data key="ontology_name">cl</data>
+      <data key="ontology_prefix">CL</data>
+      <data key="short_form">CL_0000628</data>
+      <data key="obo_id">CL:0000628</data>
+      <data key="description">["A cell that can perform photosynthesis, in which carbohydrates are synthesized from carbon dioxide and water, using light as the energy source.", "see PMID:21177950, The making of a photosynthetic animal."]</data>
+      <data key="lang">en</data>
+      <data key="label">photosynthetic cell</data>
+      <data key="ontology_iri">http://purl.obolibrary.org/obo/cl.owl</data>
+      <data key="synonyms">String[]</data>
+      <data key="is_preferred_root">false</data>
+    </node>
+    <edge source="1" target="8"/>
+    <edge source="2" target="8"/>
+    <edge source="3" target="8"/>
+    <edge source="4" target="8"/>
+    <edge source="5" target="8"/>
+    <edge source="6" target="8"/>
+    <edge source="7" target="8"/>
+    <edge source="8" target="10"/>
+    <edge source="8" target="13"/>
+    <edge source="8" target="27"/>
+    <edge source="9" target="8"/>
+    <edge source="10" target="8"/>
+    <edge source="11" target="8"/>
+    <edge source="12" target="8"/>
+    <edge source="14" target="8"/>
+    <edge source="15" target="8"/>
+    <edge source="16" target="8"/>
+    <edge source="17" target="8"/>
+    <edge source="18" target="8"/>
+    <edge source="19" target="8"/>
+    <edge source="20" target="8"/>
+    <edge source="21" target="8"/>
+    <edge source="22" target="8"/>
+    <edge source="23" target="8"/>
+    <edge source="24" target="8"/>
+    <edge source="25" target="8"/>
+    <edge source="26" target="8"/>
+    <edge source="28" target="98"/>
+    <edge source="29" target="98"/>
+    <edge source="30" target="98"/>
+    <edge source="31" target="98"/>
+    <edge source="32" target="98"/>
+    <edge source="33" target="98"/>
+    <edge source="34" target="98"/>
+    <edge source="35" target="98"/>
+    <edge source="36" target="98"/>
+    <edge source="37" target="98"/>
+    <edge source="38" target="98"/>
+    <edge source="39" target="98"/>
+    <edge source="40" target="98"/>
+    <edge source="41" target="98"/>
+    <edge source="42" target="98"/>
+    <edge source="43" target="98"/>
+    <edge source="44" target="98"/>
+    <edge source="45" target="98"/>
+    <edge source="46" target="98"/>
+    <edge source="47" target="98"/>
+    <edge source="48" target="98"/>
+    <edge source="49" target="98"/>
+    <edge source="50" target="98"/>
+    <edge source="51" target="98"/>
+    <edge source="52" target="98"/>
+    <edge source="53" target="98"/>
+    <edge source="54" target="98"/>
+    <edge source="55" target="98"/>
+    <edge source="56" target="98"/>
+    <edge source="57" target="98"/>
+    <edge source="58" target="98"/>
+    <edge source="60" target="98"/>
+    <edge source="61" target="98"/>
+    <edge source="62" target="98"/>
+    <edge source="63" target="98"/>
+    <edge source="64" target="98"/>
+    <edge source="65" target="98"/>
+    <edge source="66" target="98"/>
+    <edge source="67" target="98"/>
+    <edge source="68" target="98"/>
+    <edge source="69" target="98"/>
+    <edge source="70" target="98"/>
+    <edge source="71" target="98"/>
+    <edge source="72" target="98"/>
+    <edge source="73" target="98"/>
+    <edge source="74" target="98"/>
+    <edge source="75" target="98"/>
+    <edge source="76" target="98"/>
+    <edge source="77" target="98"/>
+    <edge source="78" target="98"/>
+    <edge source="79" target="98"/>
+    <edge source="80" target="98"/>
+    <edge source="81" target="98"/>
+    <edge source="82" target="98"/>
+    <edge source="83" target="98"/>
+    <edge source="84" target="98"/>
+    <edge source="86" target="98"/>
+    <edge source="87" target="98"/>
+    <edge source="88" target="98"/>
+    <edge source="89" target="98"/>
+    <edge source="90" target="98"/>
+    <edge source="91" target="98"/>
+    <edge source="92" target="98"/>
+    <edge source="93" target="98"/>
+    <edge source="94" target="98"/>
+    <edge source="95" target="98"/>
+    <edge source="96" target="98"/>
+    <edge source="97" target="98"/>
+    <edge source="98" target="59"/>
+    <edge source="98" target="85"/>
+    <edge source="99" target="98"/>
+    <edge source="100" target="98"/>
+    <edge source="101" target="98"/>
+    <edge source="102" target="98"/>
+    <edge source="103" target="98"/>
+    <edge source="104" target="98"/>
+    <edge source="105" target="98"/>
+    <edge source="106" target="98"/>
+    <edge source="107" target="98"/>
+    <edge source="108" target="98"/>
+    <edge source="109" target="98"/>
+    <edge source="110" target="98"/>
+    <edge source="111" target="98"/>
+  </graph>
+</graphml>

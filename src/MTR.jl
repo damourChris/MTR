@@ -1,5 +1,7 @@
 module MTR
 
+using Comonicon
+
 include("./utils/utils.jl")
 using .Utils
 

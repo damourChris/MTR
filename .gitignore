@@ -4,3 +4,10 @@ sandbox
 .env
 
 /src/data/*
+/experiments/*/data/*
+
+.CondaPkg/*
+
+.logs/*
+.log.*
+

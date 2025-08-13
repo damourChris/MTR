@@ -9,15 +9,10 @@ if (!dir.exists(raw_eset_dir)) {
     dir.create(raw_eset_dir)
 }
 
-# Download the datasets
-gse65136 <- getGEO(
-    "GSE65136",
-    destdir = raw_series_files_dir
-)
 
 download_esets <- function(dataset_id, eset_files) {
     library(GEOquery)
-
+    print(paste0("Downloading dataset ID: ", dataset_id))
     dataset <- getGEO(
         dataset_id,
         destdir = raw_series_files_dir

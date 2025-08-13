@@ -1,0 +1,1 @@
+Sep-16 16:07:29.998 [main] DEBUG nextflow.ui.console.ConsoleRunner - Unable to config console icons [1] - cause: Taskbar API is not supported on the current platform

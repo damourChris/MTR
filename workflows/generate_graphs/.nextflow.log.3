@@ -1,0 +1,69 @@
+Sep-16 16:11:41.607 [main] DEBUG nextflow.cli.Launcher - $> nextflow generate_graphs.nf
+Sep-16 16:11:41.688 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Sep-16 16:11:41.733 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/vscode/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Sep-16 16:11:41.743 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-16 16:11:41.744 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-16 16:11:41.747 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-16 16:11:41.760 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-16 16:11:41.807 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-16 16:11:41.821 [main] DEBUG nextflow.cli.CmdRun - Launching `generate_graphs.nf` [dreamy_sanger] DSL2 - revision: 5731417ab5
+Sep-16 16:11:41.823 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-16 16:11:41.823 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-16 16:11:41.879 [main] DEBUG nextflow.Session - Session UUID: fb8f5878-6c9f-40e0-ac73-bbe72cab62a0
+Sep-16 16:11:41.879 [main] DEBUG nextflow.Session - Run name: dreamy_sanger
+Sep-16 16:11:41.880 [main] DEBUG nextflow.Session - Executor pool size: 12
+Sep-16 16:11:41.889 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-16 16:11:41.896 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-16 16:11:41.920 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC 
+  System: Linux 5.15.153.1-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.24+8-post-Debian-2deb11u1
+  Encoding: UTF-8 (UTF-8)
+  Process: 4810@b68572b30d3a [172.17.0.2]
+  CPUs: 12 - Mem: 7.6 GB (220.1 MB) - Swap: 2 GB (122.5 MB)
+Sep-16 16:11:41.937 [main] DEBUG nextflow.Session - Work-dir: /workspaces/MTR/workflows/generate_graphs/work [ext2/ext3]
+Sep-16 16:11:41.938 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/MTR/workflows/generate_graphs/bin
+Sep-16 16:11:41.950 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-16 16:11:41.961 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-16 16:11:41.984 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-16 16:11:41.994 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Sep-16 16:11:42.082 [main] DEBUG nextflow.Session - Session start
+Sep-16 16:11:42.558 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-16 16:11:42.566 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/vscode/.nextflow/secrets/store.json
+Sep-16 16:11:42.572 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4d157493] - activable => nextflow.secret.LocalSecretsProvider@4d157493
+Sep-16 16:11:42.660 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-16 16:11:42.661 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-16 16:11:42.666 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-16 16:11:42.671 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=7.6 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Sep-16 16:11:42.673 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-16 16:11:42.744 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: map_to_ids
+Sep-16 16:11:42.745 [main] DEBUG nextflow.Session - Igniting dataflow network (9)
+Sep-16 16:11:42.758 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > map_to_ids
+Sep-16 16:11:42.760 [PathVisitor-5] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/input/test_esets/; pattern: *; options: [:]
+Sep-16 16:11:42.760 [PathVisitor-6] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/input/het_gnn/; pattern: *; options: [:]
+Sep-16 16:11:42.760 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/input/; pattern: raw_esets*; options: [:]
+Sep-16 16:11:42.760 [PathVisitor-4] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/input/train_data/; pattern: *; options: [:]
+Sep-16 16:11:42.760 [PathVisitor-3] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/graphs/; pattern: *; options: [:]
+Sep-16 16:11:42.760 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/input/reference_esets/; pattern: *; options: [:]
+Sep-16 16:11:42.760 [PathVisitor-7] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/results/; pattern: *; options: [:]
+Sep-16 16:11:42.760 [PathVisitor-8] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/reports/; pattern: *; options: [:]
+Sep-16 16:11:42.763 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_27da1af5eb5a63e6: /workspaces/MTR/workflows/generate_graphs/generate_graphs.nf
+Sep-16 16:11:42.766 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-16 16:11:42.767 [main] DEBUG nextflow.Session - Session await
+Sep-16 16:11:42.775 [PathVisitor-4] DEBUG nextflow.file.PathVisitor - No such file or directory: data/input/train_data/ -- Skipping visit
+Sep-16 16:11:42.775 [PathVisitor-8] DEBUG nextflow.file.PathVisitor - No such file or directory: data/reports/ -- Skipping visit
+Sep-16 16:11:42.775 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - No such file or directory: data/input/ -- Skipping visit
+Sep-16 16:11:42.775 [PathVisitor-3] DEBUG nextflow.file.PathVisitor - No such file or directory: data/graphs/ -- Skipping visit
+Sep-16 16:11:42.775 [PathVisitor-6] DEBUG nextflow.file.PathVisitor - No such file or directory: data/input/het_gnn/ -- Skipping visit
+Sep-16 16:11:42.775 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - No such file or directory: data/input/reference_esets/ -- Skipping visit
+Sep-16 16:11:42.775 [PathVisitor-7] DEBUG nextflow.file.PathVisitor - No such file or directory: data/results/ -- Skipping visit
+Sep-16 16:11:42.775 [PathVisitor-5] DEBUG nextflow.file.PathVisitor - No such file or directory: data/input/test_esets/ -- Skipping visit
+Sep-16 16:11:42.792 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-16 16:11:42.884 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-16 16:11:42.885 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-16 16:11:42.898 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Sep-16 16:11:43.134 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-16 16:11:43.169 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Sep-16 16:11:43.170 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

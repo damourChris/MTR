@@ -1,20 +1,41 @@
 library(dplyr)
 
-eset <- annonated_datasets[["gse65136_gpl10558"]]
-
-
 data_path <- Sys.getenv("DATA_DIR")
 
+processed_esets_files <- list.files(file.path(data_path, "processed_esets"), full.names = TRUE)
+processed_esets_files <- processed_esets_files[grepl("processed.rds$", processed_esets_files)]
+processed_esets <- lapply(processed_esets_files, readRDS)
 
-reference_datasets_files <- list.files(file.path(data_path, "reference_datasets"), full.names = TRUE)
-reference_datasets <- lapply(reference_datasets_files, readRDS)
-
-names(reference_datasets) <- sapply(reference_datasets_files, function(x) {
+names(processed_esets) <- sapply(processed_esets_files, function(x) {
   basename(x) %>%
     strsplit("\\.") %>%
     unlist() %>%
     .[[1]]
 })
+
+eset <- processed_esets[["GSE22886-GPL96_processed"]]
+
+gExp <- Biobase::exprs(eset)
+gExp <- log2(gExp + 1)
+
+# Test for nomality
+shapiro.test(gExp[1, ])
+
+# If the p-value is less than 0.05, the data is not normally distributed
+# If the p-value is greater than 0.05, the data is normally distributed
+
+# If the data is not normally distributed, we can use the non-parametric test
+# If the data is normally distributed, we can use the parametric test
+
+
+
+
+# Test for homogeneity of variance
+formula <- gExp[1, ] ~ eset[["cell ontology:ch1"]]
+bartlett.test(formula)
+fligner.test(formula)
+
+
 
 identify_cell_type_marker_genes <- function(eset) {
   # Filter out genes with p-values bigger than threshold
@@ -115,15 +136,15 @@ identify_cell_type_marker_genes <- function(eset) {
   return(cell_type_marker_genes)
 }
 
-results <- lapply(seq_along(reference_datasets), function(i) {
-  dataset <- reference_datasets[[i]]
+results <- lapply(seq_along(processed_esets), function(i) {
+  dataset <- processed_esets[[i]]
   # Get the current key
-  key <- names(reference_datasets)[i]
+  key <- names(processed_esets)[i]
 
   print(paste("Processing... | Identifying cell type marker genes for", key))
 
-  filename <- paste0(key, "_pairings.RData")
-  filepath <- file.path(data_path, "reference_datasets_pairings", filename)
+  filename <- paste0(key, "_pairings.rds")
+  filepath <- file.path(data_path, "processed_esets", filename)
 
   # Check if the result is already saved
   if (file.exists(filepath)) {
@@ -137,14 +158,14 @@ results <- lapply(seq_along(reference_datasets), function(i) {
     return(result)
   }
 })
-names(results) <- names(reference_datasets)
+names(results) <- names(processed_esets)
 
 results[[2]]
 
 saveRDS(results, "cell_type_marker_genes.RData")
 results <- readRDS("cell_type_marker_genes.RData")
 
-eset <- reference_datasets[[2]]
+eset <- processed_esets[[2]]
 
 groups_list <- results[[2]]
 gene_expression_matrix <- Biobase::exprs(eset)

@@ -1,0 +1,25 @@
+Precompiling project...
+  ✓ MTRCli
+  1 dependency successfully precompiled in 7 seconds. 10 already precompiled.
+  Activating project at `~/.julia/scratchspaces/07de4fe9-654c-46b4-8e57-361a4c42983c/env`
+   Resolving package versions...
+    Updating `~/.julia/scratchspaces/07de4fe9-654c-46b4-8e57-361a4c42983c/env/Project.toml`
+  [07de4fe9] + MTRCli v0.1.0 `/workspaces/MTR/cli`
+    Updating `~/.julia/scratchspaces/07de4fe9-654c-46b4-8e57-361a4c42983c/env/Manifest.toml`
+  [07de4fe9] + MTRCli v0.1.0 `/workspaces/MTR/cli`
+    Updating registry at `~/.julia/registries/General.toml`
+  No Changes to `~/.julia/scratchspaces/07de4fe9-654c-46b4-8e57-361a4c42983c/env/Project.toml`
+  No Changes to `~/.julia/scratchspaces/07de4fe9-654c-46b4-8e57-361a4c42983c/env/Manifest.toml`
+  Activating project at `/workspaces/MTR/cli`
+  Activating project at `/tmp/jl_13Aepm`
+   Resolving package versions...
+    Updating `/tmp/jl_13Aepm/Project.toml`
+  [07de4fe9] + MTRCli v0.1.0 `/workspaces/MTR/cli`
+    Updating `/tmp/jl_13Aepm/Manifest.toml`
+  [07de4fe9] + MTRCli v0.1.0 `/workspaces/MTR/cli`
+    Updating registry at `~/.julia/registries/General.toml`
+  No Changes to `/tmp/jl_13Aepm/Project.toml`
+  No Changes to `/tmp/jl_13Aepm/Manifest.toml`
+  Activating project at `/workspaces/MTR/cli`
+- PackageCompiler: compiling incremental system image
+[ Info: creating /home/vscode/.julia/completions

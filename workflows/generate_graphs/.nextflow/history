@@ -1,0 +1,13 @@
+2024-09-16 16:08:20	-	deadly_poitras	-	a446831ee04b78fb48a8e2e33af1b010	5f1d6ceb-b045-45f0-bac8-0f5547d61885	nextflow generate_graphs.nf
+2024-09-16 16:08:30	-	evil_volta	-	a446831ee04b78fb48a8e2e33af1b010	253fee59-e8f9-4c53-8fdf-b63a05fc2a9f	nextflow generate_graphs.nf
+2024-09-16 16:08:33	-	high_colden	-	04b8627ec83147d7bf0291b3e891f6f5	33c49298-5794-496c-9ef1-531b25b09b2f	nextflow generate_graphs.nf
+2024-09-16 16:09:40	-	distracted_rosalind	-	72c631e86baca1905006e94581cfd09f	6c6b6eed-4dc9-41a1-9235-155bb390ee16	nextflow generate_graphs.nf
+2024-09-16 16:09:49	-	festering_noether	-	a504427810c7dc23b2a6af3cebc266f4	965288e6-1c32-487b-8bcc-27237a52606a	nextflow generate_graphs.nf
+2024-09-16 16:10:01	-	condescending_hopper	-	a504427810c7dc23b2a6af3cebc266f4	fd54b5be-c7b2-409a-8b86-9bb488299b40	nextflow generate_graphs.nf
+2024-09-16 16:10:06	-	big_meninsky	-	3f32acd8ad042816383eccca920157da	2ef6dfeb-1b97-4cb5-9a42-caa454307035	nextflow generate_graphs.nf
+2024-09-16 16:10:54	-	cranky_turing	-	6858ff73ebca5a46e2ae310f95846c5d	36e6dd96-e103-462d-b040-98406130d357	nextflow generate_graphs.nf
+2024-09-16 16:11:33	-	serene_babbage	-	6b984d2b0b33ccb675f92bb32273a419	715de2c0-dc44-4c93-9394-d00e5843a76e	nextflow generate_graphs.nf
+2024-09-16 16:11:41	2.1s	dreamy_sanger	OK	5731417ab5c55829ab6a20d909011450	fb8f5878-6c9f-40e0-ac73-bbe72cab62a0	nextflow generate_graphs.nf
+2024-09-16 16:11:52	1.2s	admiring_ekeblad	OK	7aa2ed9a1b051028b7b43a36bb0c718f	4ffe3665-476c-48d7-879b-e2fe21701b12	nextflow generate_graphs.nf
+2024-09-16 16:12:27	1.5s	astonishing_kalman	OK	a1204875ead4aaff77736ec1f063dfb3	503d96b3-a07c-40d8-a510-6d35e7b1be30	nextflow generate_graphs.nf
+2024-09-18 09:21:51	2.5s	tender_kay	ERR	a94439aba109b4b6fafcedd0d0c49b6f	4b616c7b-0cff-4276-bc0e-d2f81adb33a6	nextflow generate_graphs.nf

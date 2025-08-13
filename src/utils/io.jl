@@ -1,6 +1,7 @@
 using JLD2
 using RCall
 using LightXML
+using ExpressionData
 
 function save_eset(eset::ExpressionSet, eset_id::String, file::String)
     # Check wether to save to JLD2 or to R

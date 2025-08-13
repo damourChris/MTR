@@ -2,17 +2,14 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/alpine
 {
 	"name": "MTR",
-	"build": {
-		// Path is relative to the devcontainer.json file.
-		"dockerfile": "Dockerfile"
-	},
+	// "build": {
+	// 	// Path is relative to the devcontainer.json file.
+	// 	"dockerfile": "Dockerfile"
+	// },
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
-			"settings": {
-				"r.rterm.linux": "/opt/miniforge3/envs/R/bin/R",
-				"julia.executablePath": "/opt/miniforge3/envs/julia/bin/julia"
-			},
 			"extensions": [
 				"REditorSupport.r",
 				"julialang.language-julia",
@@ -22,10 +19,19 @@
 			]
 		}
 	},
+	"features": {
+		"ghcr.io/julialang/devcontainer-features/julia:1": {},
+		"ghcr.io/robsyme/features/nextflow:1": {}
+	},
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "chmod +x /workspaces/MTR/.devcontainer/post_create.sh && /workspaces/MTR/.devcontainer/post_create.sh"
+	"postCreateCommand": "chmod +x /workspaces/MTR/.devcontainer/post_create.sh && /workspaces/MTR/.devcontainer/post_create.sh",
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
+	"containerEnv": {
+		"CONDA_PREFIX": "/opt/conda",
+		"DATA_DIR": "/workspaces/MTR/src/data",
+		"R_DIR": "/workspaces/MTR/src/R"
+	}
 }

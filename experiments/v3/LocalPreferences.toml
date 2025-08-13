@@ -1,0 +1,4 @@
+[RCall]
+Rhome = "/lib/R"
+libR = "/lib/R/lib/libR.so"
+# libR = "/workspaces/MTR/.CondaPkg/.pixi/envs/default/lib/R/lib/libR.so"
