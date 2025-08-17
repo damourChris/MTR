@@ -1,0 +1,43 @@
+[CellTypeDeconvolutionFramework]
+cache_cleanup_interval_minutes = 60
+cache_compression_enabled = true
+cache_eviction_threshold = 0.8
+cache_integrity_checking = true
+cache_operation_logging = true
+enable_graph_construction_caching = true
+enable_ontology_data_caching = true
+enable_reference_data_caching = true
+enable_synthetic_data_caching = true
+gene_correlation_threshold = 0.3
+include_ontology_hierarchy_edges = true
+lazy_loading_enabled = true
+maximum_edges_per_gene_node = 15
+memory_monitoring_interval_seconds = 30
+memory_usage_logging = false
+ontology_maximum_depth = 5
+repository_cache_directory = "/home/damourchris/.framework_cache"
+repository_logging_level = "info"
+repository_memory_limit_gb = 3.8111324310302734
+string_database_confidence_threshold = 0.4
+
+[CellTypeDeconvolutionFrameworkV5]
+cache_cleanup_interval_minutes = 60
+cache_compression_enabled = true
+cache_eviction_threshold = 0.8
+cache_integrity_checking = true
+cache_operation_logging = true
+enable_graph_construction_caching = true
+enable_ontology_data_caching = true
+enable_reference_data_caching = true
+enable_synthetic_data_caching = true
+gene_correlation_threshold = 0.3
+include_ontology_hierarchy_edges = true
+lazy_loading_enabled = true
+maximum_edges_per_gene_node = 15
+memory_monitoring_interval_seconds = 30
+memory_usage_logging = false
+ontology_maximum_depth = 5
+repository_cache_directory = "/home/damourchris/.v5_cache"
+repository_logging_level = "info"
+repository_memory_limit_gb = 3.8111324310302734
+string_database_confidence_threshold = 0.4
